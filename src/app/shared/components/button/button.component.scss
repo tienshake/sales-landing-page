@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixins";
+
+.custom-button {
+  width: 100%;
+  border-radius: 0%;
+  padding: 14px;
+  ::ng-deep {
+    .mdc-button__label {
+      white-space: nowrap;
+      display: flex;
+      color: $text-color;
+      font-size: $font-size-normal;
+      @include typography-poppins;
+      @include flex-center;
+    }
+  }
+
+  svg {
+    fill: $text-white;
+    width: 56px;
+  }
+
+  &.primary {
+    background-color: $primary-color;
+    ::ng-deep {
+      .mdc-button__label {
+        color: $text-white;
+      }
+    }
+  }
+
+  &.secondary {
+    background-color: $secondary-color;
+  }
+
+  &.white {
+    background-color: $text-white;
+    &:hover {
+      opacity: 0.7;
+      background-color: $text-white;
+    }
+
+    svg {
+      fill: $text-color;
+    }
+  }
+}

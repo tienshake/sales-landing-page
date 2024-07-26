@@ -1,0 +1,18 @@
+// responsive.scss
+@import "variables";
+
+// Responsive Styles
+
+// Mobile First
+@media (max-width: $breakpoint-mobile) {
+  body {
+    font-size: $font-size-small;
+  }
+}
+
+// Desktop
+// @media (min-width: $breakpoint-desktop) {
+//   body {
+//     font-size: $font-size-base;
+//   }
+// }

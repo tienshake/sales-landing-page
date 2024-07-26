@@ -1,4 +1,23 @@
+//color
 $primary-color: #b2c4ce;
-$font-size-base: 13px;
+$secondary-color: #c5d4db;
 $text-color: #545454;
 $text-white: #ffff;
+
+// Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Font Sizes
+$font-size-minimum: 0.9rem;
+$font-size-small: 1.2rem;
+$font-size-normal: 1rem;
+$font-size-base: 1.3rem;
+$font-size-large: 1.6rem;
+
+// Font Family
+$font-poppins: "Poppins", sans-serif;
+
+// css
+$header-height: 40px;

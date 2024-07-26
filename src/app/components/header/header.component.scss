@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: $primary-color;
+  @include flex-center;
+  ul {
+    max-width: 1200px;
+    height: $header-height;
+    @include flex-center;
+    gap: 40px;
+    li {
+      font-size: $font-size-minimum;
+      @include typography-poppins;
+    }
+    a {
+      color: $text-white;
+    }
+  }
+}
+
+.header-button-container {
+  position: absolute;
+  right: 0;
+}

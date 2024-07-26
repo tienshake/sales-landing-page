@@ -1,5 +1,13 @@
+@import "variables";
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin typography-poppins($font-weight: 500, $letter-spacing: 0.2em) {
+  font-family: $font-poppins;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
 }
