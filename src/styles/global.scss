@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixins";
+// Font size
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+// Reset Style
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+body {
+  font-family: "Libre Baskerville", serif;
+  font-size: $font-size-base;
+  color: $text-color;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
