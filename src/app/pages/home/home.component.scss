@@ -126,8 +126,8 @@
       }
 
       h5 {
-        top: 70px;
-        left: -10px;
+        top: 7rem;
+        left: -1rem;
         position: absolute;
         font-family: $font-blackStones;
         font-size: 7rem;
@@ -170,7 +170,7 @@
     padding: 0 10rem;
 
     display: flex;
-    gap: 80px;
+    gap: 8rem;
     margin-bottom: 20rem;
     .welcome-img {
       max-height: 56.1rem;
@@ -223,7 +223,7 @@
 
     .about-challenge-left {
       width: 90%;
-      margin-right: -250px;
+      margin-right: -25rem;
       background-color: $text-white;
       z-index: $z-hight;
       padding: 8rem 7.3rem;
@@ -350,7 +350,7 @@
     }
 
     p {
-      border-bottom: 1px solid $text-gray;
+      border-bottom: 0.1rem solid $text-gray;
       padding-bottom: 3rem;
       margin-bottom: 3rem;
     }
