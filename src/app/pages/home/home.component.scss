@@ -80,11 +80,7 @@
 .home-banner {
   position: relative;
   height: 66.3rem;
-  background-image: url("/assets/images/banner.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position: top;
+  overflow: hidden;
 
   .banner-overlay {
     position: absolute;
