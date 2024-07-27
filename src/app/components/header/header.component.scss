@@ -9,10 +9,10 @@
   z-index: $z-very-hight;
   @include flex-center;
   ul {
-    max-width: 1200px;
+    max-width: 120rem;
     height: $header-height;
     @include flex-center;
-    gap: 40px;
+    gap: 4rem;
     li {
       font-size: $font-size-minimum;
       @include typography-poppins;

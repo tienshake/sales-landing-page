@@ -3,7 +3,7 @@
 
 .custom-button {
   border-radius: 0%;
-  padding: 14px;
+  padding: 1.4rem;
   ::ng-deep {
     .mdc-button__label {
       white-space: nowrap;
@@ -17,7 +17,7 @@
 
   svg {
     fill: $text-white;
-    width: 56px;
+    width: 5.6rem;
   }
 
   &.primary {
@@ -41,7 +41,7 @@
     }
 
     svg {
-      fill: $primary-color
+      fill: $primary-color;
     }
   }
 }

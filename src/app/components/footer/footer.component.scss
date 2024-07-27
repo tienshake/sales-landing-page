@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  height: 40px;
+  padding: 0 2rem;
+  height: 4rem;
   background-color: $primary-color;
 
   ul {
@@ -25,7 +25,7 @@
     font-weight: 500;
     text-transform: uppercase;
     border-right: 1px solid $text-white;
-    padding: 0 10px;
+    padding: 0 1rem;
   }
 
   span {
