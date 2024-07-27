@@ -161,12 +161,12 @@
   }
 }
 
-// ========= Home-section1 =========
-.home-section1 {
+// ========= Home-about =========
+.home-about {
   margin-top: 100px;
 
-  // section1-welcome
-  .section1-welcome {
+  // about-welcome
+  .about-welcome {
     padding: 0 100px;
 
     display: flex;
@@ -199,7 +199,7 @@
       }
     }
 
-    .section1-underline {
+    .about-underline {
       @include underline($primary-color);
       margin-bottom: 20px;
     }
@@ -215,13 +215,13 @@
       color: $primary-color;
     }
   }
-  // section1-challenge
-  .section1-challenge {
+  // about-challenge
+  .about-challenge {
     display: flex;
     padding: 0 80px;
     margin-bottom: 100px;
 
-    .section1-challenge-left {
+    .about-challenge-left {
       width: 90%;
       margin-right: -250px;
       background-color: $text-white;
@@ -261,7 +261,7 @@
       }
     }
 
-    .section1-challenge-right {
+    .about-challenge-right {
       min-width: 596px;
       height: 720px;
       margin-top: -80px;
@@ -272,8 +272,8 @@
     }
   }
 
-  // section1-des
-  .section1-des {
+  // about-des
+  .about-des {
     @include flex-center;
     flex-direction: column;
     margin-bottom: 100px;
@@ -310,8 +310,8 @@
   }
 }
 
-// section1-remind
-.section1-remind {
+// about-remind
+.about-remind {
   display: flex;
   justify-content: center;
   gap: 90px;
