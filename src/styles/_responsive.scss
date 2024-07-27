@@ -1,11 +1,9 @@
 // responsive.scss
 @import "variables";
 
-// Responsive Styles
-
-// Desktop
-@media (max-width: $breakpoint-desktop) {
+// Table
+@media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
   html {
-    font-size: $font-size-tablet; // 9px
+    font-size: $font-size-tablet;
   }
 }
