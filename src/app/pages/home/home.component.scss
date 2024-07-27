@@ -1,0 +1,271 @@
+@import "variables";
+@import "mixins";
+
+// Content
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// underline
+.underline {
+  @include underline($text-white);
+}
+
+// Heading
+.home-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 89px;
+  background-color: $text-white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 0 36px;
+
+  h3 {
+    color: $primary-color;
+    font-family: $font-cammron;
+    font-weight: 400;
+    font-size: $font-size-xlarge;
+    letter-spacing: 0.15em;
+  }
+
+  h2,
+  .home-heading-date {
+    font-family: $font-questrial;
+    font-size: $font-size-small;
+    color: $text-gray;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+  }
+
+  .home-heading-date,
+  h3,
+  .heading-last {
+    flex: 1;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .heading-last {
+    h2 {
+      float: right;
+      width: 165px;
+      text-align: right;
+    }
+  }
+
+  .home-heading-date {
+    text-align: left;
+    span {
+      margin-left: 10px;
+    }
+
+    span:first-child {
+      margin: 0;
+    }
+  }
+}
+
+// Banner
+.home-banner {
+  position: relative;
+  height: 663px;
+  background-image: url("/assets/images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: $z-low;
+  }
+
+  .banner-content {
+    width: 566px;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    z-index: $z-hight;
+
+    h3 {
+      font-family: $font-poppins;
+      font-size: $font-size-normal;
+      color: $text-white;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      margin-bottom: 10px;
+    }
+
+    .banner-signature {
+      margin-top: 20px;
+      position: relative;
+      h4 {
+        font-family: $font-cammron;
+        font-size: $font-size-xxlarge;
+        color: $text-white;
+        font-weight: 400;
+        line-height: 1.3;
+      }
+
+      h5 {
+        top: 70px;
+        left: -10px;
+        position: absolute;
+        font-family: $font-blackStones;
+        font-size: 7rem;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: $text-white;
+        font-style: italic;
+      }
+    }
+
+    p {
+      margin-top: 70px;
+      margin-bottom: 30px;
+      color: $text-white;
+    }
+  }
+
+  .banner-text-scroll {
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    z-index: $z-hight;
+    transform: scale(1, 1) translate(40.5px, 0px) rotate(90deg);
+    display: flex;
+    align-items: center;
+    color: $text-white;
+
+    img {
+      width: 47px;
+    }
+  }
+}
+
+// Home-section1
+.home-section1 {
+  margin-top: 100px;
+
+  .section1-welcome {
+    padding: 0 100px;
+
+    display: flex;
+    gap: 80px;
+    margin-bottom: 200px;
+    .welcome-img {
+      max-height: 561px;
+      max-width: 388px;
+      flex: 1;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .welcome-text {
+      flex: 1;
+      padding-top: 20px;
+      h3 {
+        font-family: $font-garamond;
+        font-size: 5rem;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 20px;
+        margin-bottom: 20px;
+        width: 400px;
+      }
+      p {
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+      }
+    }
+
+    .section1-underline {
+      @include underline($primary-color);
+      margin-bottom: 20px;
+    }
+
+    span {
+      display: block;
+      max-width: 440px;
+      font-family: $font-blackStones;
+      font-size: 4.5rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      font-style: italic;
+      color: $primary-color;
+    }
+  }
+
+  .section1-challenge {
+    display: flex;
+    padding: 0 80px;
+
+    .section1-challenge-left {
+      width: 90%;
+      margin-right: -250px;
+      background-color: $text-white;
+      z-index: $z-hight;
+      padding: 80px 73px;
+      h3 {
+        font-family: $font-garamond;
+        font-size: 4.6rem;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 20px;
+      }
+      & > p {
+        font-family: $font-questrial;
+        line-height: 1.5;
+        letter-spacing: 0.25em;
+        margin-bottom: 20px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 30px;
+        border-bottom: 1px solid $text-gray;
+        span {
+          font-family: $font-blackStones;
+          color: $primary-color;
+          font-size: $font-size-xlarge;
+          font-style: italic;
+        }
+
+        p {
+          letter-spacing: 0.05em;
+        }
+      }
+
+      li:last-child {
+        border: none;
+        padding-bottom: 0;
+      }
+    }
+
+    .section1-challenge-right {
+      min-width: 596px;
+      height: 720px;
+      margin-top: -80px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

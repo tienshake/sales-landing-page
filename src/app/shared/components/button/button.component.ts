@@ -1,3 +1,4 @@
+import { NgIf } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
@@ -6,10 +7,12 @@ import { MatButtonModule } from '@angular/material/button';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   standalone: true,
-  imports: [MatButtonModule],
+  imports: [MatButtonModule, NgIf],
 })
 export class ButtonComponent implements OnInit {
   @Input() disabled: boolean = false;
+  @Input() showArrow: boolean = true;
+
   @Input() color: 'primary' | 'secondary' | 'white' = 'primary';
   @Input() type: 'button' | 'submit' | 'reset' = 'button';
   @Output() onClick = new EventEmitter<MouseEvent>();

@@ -11,3 +11,10 @@
   font-weight: $font-weight;
   letter-spacing: $letter-spacing;
 }
+
+@mixin underline($color, $width: 30px, $height: 1px) {
+  display: block;
+  width: $width;
+  height: $height;
+  background-color: $color;
+}

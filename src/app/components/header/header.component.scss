@@ -6,6 +6,7 @@
   width: 100%;
   top: 0;
   background-color: $primary-color;
+  z-index: $z-very-hight;
   @include flex-center;
   ul {
     max-width: 1200px;

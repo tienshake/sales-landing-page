@@ -2,7 +2,6 @@
 @import "mixins";
 
 .custom-button {
-  width: 100%;
   border-radius: 0%;
   padding: 14px;
   ::ng-deep {
@@ -10,7 +9,7 @@
       white-space: nowrap;
       display: flex;
       color: $text-color;
-      font-size: $font-size-normal;
+      font-size: $font-size-small;
       @include typography-poppins;
       @include flex-center;
     }
@@ -42,7 +41,7 @@
     }
 
     svg {
-      fill: $text-color;
+      fill: $primary-color
     }
   }
 }
