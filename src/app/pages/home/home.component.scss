@@ -119,6 +119,12 @@
       margin-bottom: 3rem;
       color: $text-white;
     }
+
+    ::ng-deep {
+      button {
+        height: 5rem;
+      }
+    }
   }
 
   .banner-text-scroll {
