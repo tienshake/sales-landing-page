@@ -66,6 +66,7 @@
 
   .home-heading-date {
     text-align: left;
+
     span {
       margin-left: 1rem;
     }
@@ -113,6 +114,7 @@
     .banner-signature {
       margin-top: 2rem;
       position: relative;
+
       h4 {
         font-family: $font-cammron;
         font-size: $font-size-xxlarge;
@@ -172,6 +174,7 @@
       max-height: 56.1rem;
       max-width: 38.8rem;
       flex: 1;
+
       img {
         height: 100%;
         width: 100%;
@@ -190,6 +193,7 @@
         margin-bottom: 2rem;
         width: 40rem;
       }
+
       p {
         margin-bottom: 2rem;
       }
@@ -211,6 +215,7 @@
       color: $primary-color;
     }
   }
+
   // about-challenge
   .about-challenge {
     display: flex;
@@ -230,7 +235,8 @@
         line-height: 1;
         margin-bottom: 2rem;
       }
-      & > p {
+
+      &>p {
         font-family: $font-questrial;
         line-height: 1.5;
         letter-spacing: 0.25em;
@@ -357,6 +363,116 @@
       letter-spacing: 0.25em;
       font-weight: 400;
       text-transform: uppercase;
+    }
+  }
+}
+
+// Feature
+.feature-intro {
+  .feature-banner {
+    position: relative;
+    height: 663px;
+    background-image: url("/assets/images/background-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    .feature-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.15);
+      z-index: $z-low;
+    }
+
+    .feature-content {
+      width: 939px;
+      height: 60%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      z-index: $z-hight;
+
+      .feature-text-head {
+        transform: scale(1, 1) translate(0px, 0px) rotate(-2deg);
+        color: $text-white;
+        line-height: 1;
+        letter-spacing: 0em;
+        font-size: 7rem;
+        text-align: center;
+        width: 541px;
+        height: 67px;
+        font-family: $font-blackStones;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 36px;
+      }
+
+
+      .feature-text-choice {
+        color: $text-white;
+        font-size: 3rem;
+        text-align: center;
+        font-family: $font-cammron;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 36px;
+      }
+
+      .feature-text-desc {
+        color: $text-white;
+        max-width: 508px;
+        text-align: center;
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+        font-size: 13px;
+        font-family: 'Libre Baskerville';
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
+
+    .feature-laptop {
+      position: absolute;
+      width: 939px;
+      height: 913px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -13%);
+      .feature-laptop-wrapper {
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+        border-radius: inherit;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-image: url("/assets/images/laptop.png");
+      }
+
+      .feature-laptop-background {
+        // box-sizing: border-box;
+        // display: block;
+        // outline: none;
+        // pointer-events: auto;
+        transform-origin: 50% 50%;
+        position: absolute;
+        left: 206px;
+        top: 320px;
+        width: 448px;
+        height: 280px;
+        background-image: url("/assets/images/background-laptop.png");
+      }
     }
   }
 }
