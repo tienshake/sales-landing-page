@@ -144,32 +144,71 @@
   </div>
 
   <!-- ==== About ==== -->
-   <div class="feature-intro">
+  <div class="feature-intro">
     <div class="feature-overlay"></div>
     <div class="feature-banner">
       <div class="feature-content">
         <p class="feature-text-head">introducing...</p>
         <p class="feature-text-choice">Your Course or Product Title</p>
-        <p class="feature-text-desc">Here let's go ahead and display a really great and hard-hitting description of your course. Keep it brief, but dangle a big carrot here, friend. Like, a big brief carrot. You know what I'm saying? Don't worry - we will be sharing all of the details down below!</p>
+        <p class="feature-text-desc">
+          Here let's go ahead and display a really great and hard-hitting
+          description of your course. Keep it brief, but dangle a big carrot
+          here, friend. Like, a big brief carrot. You know what I'm saying?
+          Don't worry - we will be sharing all of the details down below!
+        </p>
       </div>
       <div class="feature-laptop">
-        <div class="feature-laptop-wrapper">
-        </div>
-        <div class="feature-laptop-background">
-        </div>
+        <div class="feature-laptop-wrapper"></div>
+        <div class="feature-laptop-background"></div>
         <div class="feature-learn">
           <p class="feature-learn-break">Let's break it down</p>
           <p class="feature-learn-desc">Here's what you'll learn</p>
         </div>
+        <div class="feature-background">
+          <app-card
+            imageSrc="/assets/images/feature-1.jpg"
+            alt="feature-1"
+            featureTitle="Feature one"
+            description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."
+          ></app-card>
+          <app-card
+            imageSrc="/assets/images/feature-2.jpg"
+            alt="feature-2"
+            featureTitle="feature two"
+            description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."
+            [isReverse]="true"
+          ></app-card>
+          <app-card
+            imageSrc="/assets/images/feature-3.jpg"
+            alt="feature-3"
+            featureTitle="Feature three"
+            description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."
+          ></app-card>
+          <app-card
+            imageSrc="/assets/images/feature-4.png"
+            alt="feature-4"
+            featureTitle="Feature four"
+            description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."
+            [isReverse]="true"
+          ></app-card>
+        </div>
       </div>
     </div>
-   </div>
-   <div class="feature-categories">
-      <div class="feature-background">
-        <app-card imageSrc="/assets/images/feature-1.jpg" alt="feature-1" featureTitle="Feature one" description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."></app-card>
-        <app-card imageSrc="/assets/images/feature-2.jpg" alt="feature-2" featureTitle="feature two" description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization." [isReverse]="true"></app-card>
-        <app-card imageSrc="/assets/images/feature-3.jpg" alt="feature-3" featureTitle="Feature three" description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."></app-card>
-        <app-card imageSrc="/assets/images/feature-4.png" alt="feature-4" featureTitle="Feature four" description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization." [isReverse]="true"></app-card>
+  </div>
+  <div class="feature-categories"></div>
+  <!-- === Sound === -->
+  <div class="sound-container">
+    <div class="sound-wrapper">
+      <p class="sound-heading">How does this sound?</p>
+      <h2 class="sound-result">THE RESULTS YOU'RE GOING TO GET:</h2>
+      <div class="card-step-wrapper">
+        <div class="card-step">
+          <h2 class="card-number">01</h2>
+          <p class="card-desc">
+            Replace your 9-5 income and make more in a month than ever before.
+          </p>
+        </div>
       </div>
-   </div>
+    </div>
+  </div>
 </div>
