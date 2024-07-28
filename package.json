@@ -1,12 +1,15 @@
 {
   "name": "sales",
   "version": "0.0.0",
+  "homepage": "https://tienshake.github.io/sales-landing-page/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist/sales"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +23,7 @@
     "@angular/platform-browser": "^18.1.0",
     "@angular/platform-browser-dynamic": "^18.1.0",
     "@angular/router": "^18.1.0",
+    "gh-pages": "^6.1.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
