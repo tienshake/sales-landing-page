@@ -1,0 +1,207 @@
+@import "variables";
+@import "mixins";
+
+.home-fqa {
+  @include flex-center;
+  flex-direction: column;
+  background-color: $text-white;
+  padding-top: 10rem;
+  .home-fqa-title {
+    font-family: $font-cammron;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.home-fqa-content {
+  display: flex;
+  padding-bottom: 10rem;
+  width: 95rem;
+
+  ul {
+    padding: 0 5rem;
+    border-right: 2px solid $border-color;
+  }
+
+  ul:last-child {
+    border: none;
+  }
+
+  li {
+    margin-bottom: 6rem;
+    h4 {
+      font-family: $font-garamond;
+      font-size: 3rem;
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.fqa-quantity {
+  background-color: $primary-color;
+  width: 100%;
+  height: 23rem;
+  @include flex-center;
+
+  ul {
+    width: 120rem;
+    @include flex-center;
+  }
+
+  li {
+    @include flex-center;
+    flex-direction: column;
+    padding: 0 4rem;
+    border-right: 2px solid $text-white;
+
+    span {
+      font-family: $font-cammron;
+      font-size: 4.2rem;
+      color: $text-white;
+    }
+
+    p {
+      width: 15.6rem;
+      text-align: center;
+      color: $text-white;
+    }
+  }
+
+  li:last-child {
+    border: none;
+  }
+}
+
+.fqa-banner {
+  position: relative;
+  width: 100%;
+  height: 65rem;
+  overflow: hidden;
+
+  .fqa-content {
+    width: 47rem;
+    position: absolute;
+    z-index: $z-hight;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $text-white;
+    @include flex-center;
+    flex-direction: column;
+
+    h3 {
+      font-family: $font-blackStones;
+      font-size: 7rem;
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    ::ng-deep {
+      button {
+        height: 5.3rem;
+        width: 22.1rem;
+      }
+    }
+  }
+}
+
+.fqa-social {
+  width: 100%;
+  height: 12rem;
+  border-bottom: 2px solid $border-color;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    color: $primary-color;
+    font-family: $font-cammron;
+    font-weight: 400;
+    font-size: $font-size-xlarge;
+    letter-spacing: 0.15em;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    svg {
+      height: 17px;
+      path {
+        fill: $primary-color;
+      }
+    }
+
+    li {
+      @include flex-center;
+      font-family: $font-garamond;
+      letter-spacing: 0.1em;
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-style: italic;
+      color: $primary-color;
+    }
+  }
+}
+
+.fqa-info {
+  width: 100%;
+  height: 23rem;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .fqa-info-link {
+    display: flex;
+    gap: 3rem;
+    letter-spacing: 0.25em;
+
+    li {
+      line-height: 2;
+      font-size: 1.1rem;
+      font-family: $font-questrial;
+      font-weight: 400;
+    }
+  }
+
+  .fqa-info-last {
+    height: 100%;
+    width: 40rem;
+    p {
+      text-align: right;
+      margin-bottom: 2rem;
+    }
+
+    ::ng-deep {
+      button {
+        height: 5.3rem;
+        width: 22.1rem;
+        float: right;
+        background-color: $tertiary-color;
+      }
+    }
+  }
+}
+
+.fqa-images {
+  height: 26rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  img {
+    display: inline-block;
+    height: 100%;
+    width: 26rem;
+    object-fit: cover;
+  }
+}

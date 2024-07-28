@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -49,6 +50,29 @@ ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+// Content
+.content-wrapper {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+// Underline
+.underline {
+  @include underline($text-white);
+}
+
+//Overlay
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: $z-low;
 }
 
 .parallax {

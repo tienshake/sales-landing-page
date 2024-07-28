@@ -1,0 +1,206 @@
+@import "variables";
+@import "mixins";
+
+// ========= Home-about =========
+.home-about {
+  padding-top: 10rem;
+
+  // about-welcome
+  .about-welcome {
+    padding: 0 10rem;
+
+    display: flex;
+    gap: 8rem;
+    margin-bottom: 20rem;
+    .welcome-img {
+      max-height: 56.1rem;
+      max-width: 38.8rem;
+      flex: 1;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .welcome-text {
+      flex: 1;
+      padding-top: 2rem;
+      h3 {
+        font-family: $font-garamond;
+        font-size: 5rem;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 2rem;
+        margin-bottom: 2rem;
+        width: 40rem;
+      }
+      p {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .about-underline {
+      @include underline($primary-color);
+      margin-bottom: 2rem;
+    }
+
+    span {
+      display: block;
+      max-width: 30rem;
+      font-family: $font-blackStones;
+      font-size: 5rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      font-style: italic;
+      color: $primary-color;
+    }
+  }
+  // about-challenge
+  .about-challenge {
+    display: flex;
+    padding: 0 8rem;
+    margin-bottom: 10rem;
+
+    .about-challenge-left {
+      width: 90%;
+      margin-right: -25rem;
+      background-color: $text-white;
+      z-index: $z-hight;
+      padding: 8rem 7.3rem;
+      h3 {
+        font-family: $font-garamond;
+        font-size: 4.6rem;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 2rem;
+      }
+      & > p {
+        font-family: $font-questrial;
+        line-height: 1.5;
+        letter-spacing: 0.25em;
+        margin-bottom: 2rem;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        padding: 3rem;
+        border-bottom: 0.1rem solid $text-gray;
+        span {
+          font-family: $font-blackStones;
+          color: $primary-color;
+          font-size: $font-size-xlarge;
+          font-style: italic;
+        }
+      }
+
+      li:last-child {
+        border: none;
+        padding-bottom: 0;
+      }
+    }
+
+    .about-challenge-right {
+      min-width: 59.6rem;
+      height: 70.2rem;
+      margin-top: -8rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  // about-des
+  .about-des {
+    @include flex-center;
+    flex-direction: column;
+    margin-bottom: 10rem;
+    img {
+      border-radius: 50%;
+      height: 17.4rem;
+      width: 17.4rem;
+      margin-bottom: 4rem;
+      object-fit: cover;
+    }
+
+    h2 {
+      font-family: $font-blackStones;
+      font-size: 7rem;
+      font-style: italic;
+      color: $primary-color;
+      font-weight: 300;
+      width: 50rem;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 4rem;
+    }
+
+    p {
+      width: 52.8rem;
+      margin-bottom: 3rem;
+    }
+
+    span {
+      font-family: $font-questrial;
+      line-height: 1.5;
+      letter-spacing: 0.25em;
+    }
+  }
+}
+
+// about-remind
+.about-remind {
+  display: flex;
+  justify-content: center;
+  gap: 9rem;
+  background-color: $text-white;
+  padding-bottom: 10rem;
+  .remind-img {
+    width: 49rem;
+    height: 67rem;
+    margin-top: -3rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .remind-text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 41.3rem;
+
+    h3 {
+      font-family: $font-questrial;
+      line-height: 1.5;
+      letter-spacing: 0.25em;
+      font-weight: 400;
+      margin-bottom: 4rem;
+    }
+
+    h4 {
+      font-family: $font-garamond;
+      font-size: 5.2rem;
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 4rem;
+    }
+
+    p {
+      border-bottom: 0.1rem solid $text-gray;
+      padding-bottom: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    span {
+      font-family: $font-questrial;
+      line-height: 1.7;
+      letter-spacing: 0.25em;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}
