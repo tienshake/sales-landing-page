@@ -10,6 +10,15 @@
 
   ul {
     display: flex;
+    a {
+      font-family: $font-poppins;
+      color: $text-white;
+      font-size: $font-size-minimum;
+      font-weight: 500;
+      text-transform: uppercase;
+      border-right: 1px solid $text-white;
+      padding: 0 1rem;
+    }
   }
 
   li:last-child {
@@ -18,22 +27,14 @@
     }
   }
 
-  a {
-    font-family: $font-poppins;
-    color: $text-white;
-    font-size: $font-size-minimum;
-    font-weight: 500;
-    text-transform: uppercase;
-    border-right: 1px solid $text-white;
-    padding: 0 1rem;
-  }
-
   span {
-    font-family: $font-garamond;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 1.8rem;
-    color: $text-white;
-    cursor: pointer;
+    a {
+      font-family: $font-garamond;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1.8rem;
+      color: $text-white;
+      cursor: pointer;
+    }
   }
 }
