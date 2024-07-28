@@ -1,0 +1,19 @@
+<div *ngIf="!isReverse" class="card-wrapper">
+    <img [src]="imageSrc" alt="feature-image">
+    <div class="card-content">
+        <h3>{{ featureTitle }}</h3>
+        <h2>Title Goes Here</h2>
+        <div class="card-underline"></div>
+        <p>{{ description }}</p>
+    </div>
+</div>
+
+<div *ngIf="isReverse" class="card-wrapper-reverse">
+    <img [src]="imageSrc" alt="feature-image">
+    <div class="card-content">
+        <h3>{{ featureTitle }}</h3>
+        <h2>Title Goes Here</h2>
+        <div class="card-underline"></div>
+        <p>{{ description }}</p>
+    </div>
+</div>
