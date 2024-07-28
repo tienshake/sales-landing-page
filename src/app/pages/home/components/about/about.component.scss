@@ -86,7 +86,7 @@
         align-items: center;
         gap: 4rem;
         padding: 3rem;
-        border-bottom: 0.1rem solid $text-gray;
+        border-bottom: 0.2rem solid $tertiary-color;
         span {
           font-family: $font-blackStones;
           color: $primary-color;
@@ -190,7 +190,7 @@
     }
 
     p {
-      border-bottom: 0.1rem solid $text-gray;
+      border-bottom: 0.2rem solid $tertiary-color;
       padding-bottom: 3rem;
       margin-bottom: 3rem;
     }
