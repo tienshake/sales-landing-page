@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+
+.work-step {
+    padding: 2.4rem 5.4rem 3.4rem 5.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-right: 0.1rem solid #54545433;
+
+    >h2 {
+        transform: scale(1, 1) translate(0px, 0px);
+        color: #545454;
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 0.25em;
+        font-size: 1.3rem;
+        font-family: $font-questrial;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 3.2rem;
+    }
+
+    .work-step-content {
+        max-width: 27.7rem;
+        text-align: center;
+    }
+}

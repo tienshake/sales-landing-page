@@ -535,88 +535,93 @@
 // Sound
 .sound-container {
   background: #F7F4F1;
+
   .sound-wrapper {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding-top: 13.9rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 7.2rem;
-  
-  .sound-heading {
-    width: 85.4rem;
-    height: 9rem;
-    transform: scale(1, 1) translate(0px, 0px) rotate(-1deg);
-    animation-fill-mode: both;
-    box-sizing: border-box;
-    display: block;
-    outline: none;
-    pointer-events: auto;
-    -ms-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    color: rgba(178, 196, 206, 1);
-    line-height: 1;
-    letter-spacing: 0em;
-    font-size: 7.5rem;
-    text-align: center;
-    font-family: $font-blackStones;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 4.5rem;
-  }
-
-  .sound-result {
-    width: 47.2rem;
-    height: 4.1rem;
-    transition-duration: 0.25s;
-    transition-property: opacity;
-    transform: scale(1, 1) translate(0px, 0px);
-    color: rgba(84, 84, 84, 1);
-    text-transform: uppercase;
-    line-height: 1.8;
-    letter-spacing: 0.25em;
-    font-size: 1.2rem;
-    font-family: $font-poppins;
-    font-weight: 500;
-    font-style: normal;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-top: 11.4rem;
+    align-items: center;
     display: flex;
+    flex-direction: column;
+    margin-bottom: 7.2rem;
+
+    .sound-heading {
+      width: 85.4rem;
+      height: 9rem;
+      transform: scale(1, 1) translate(0px, 0px) rotate(-1deg);
+      animation-fill-mode: both;
+      box-sizing: border-box;
+      display: block;
+      outline: none;
+      pointer-events: auto;
+      -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      color: rgba(178, 196, 206, 1);
+      line-height: 1;
+      letter-spacing: 0em;
+      font-size: 7.5rem;
+      text-align: center;
+      font-family: $font-blackStones;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 4.5rem;
+    }
+
+    .sound-result {
+      width: 47.2rem;
+      height: 4.1rem;
+      transition-duration: 0.25s;
+      transition-property: opacity;
+      transform: scale(1, 1) translate(0px, 0px);
+      color: rgba(84, 84, 84, 1);
+      text-transform: uppercase;
+      line-height: 1.8;
+      letter-spacing: 0.25em;
+      font-size: 1.2rem;
+      font-family: $font-poppins;
+      font-weight: 500;
+      font-style: normal;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sound-layout {
+      margin-bottom: 7.2rem;
+    }
+
+    .sound-button {
+      margin-bottom: 9rem;
+    }
+  }
+}
+
+// How it works
+.work-container {
+
+  .work-wrapper {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
     justify-content: center;
-  }
-}
-}
+    flex-direction: column;
 
-//  Tach ra component - đó làm tiếp t tách
-.card-step {
-  display: flex;
-  align-items: center;
-  gap: 6.4rem;
-  max-width: 67.5rem;
-  padding-right: 7rem;
-  width: 100%;
-  border-bottom: 0.2rem solid #54545433;
+    .work-title {
+      font-family: $font-cammron;
+      font-weight: 400;
+      font-style: normal;
+      color: rgba(84, 84, 84, 1);
+      line-height: 1.5;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 3.8rem;
+      text-align: center;
+      margin-bottom: 6rem;
+    }
 
-  .card-number {
-    transform: scale(1, 1) translate(0px, 0px);
-    line-height: 1.5;
-    letter-spacing: 0.025em;
-    font-family: $font-cammron;
-    font-weight: 400;
-    font-style: normal;
-    color: rgba(178, 196, 206, 1);
-    font-size: 7.5rem;
-    text-align: left;
-  }
-  
-  .card-desc {
-    transform: scale(1, 1) translate(0px, 0px);
-    line-height: 1.2;
-    font-size: 2rem;
-    text-align: left;
-    font-family: $font-cammron;
-    font-weight: 400;
-    font-style: normal;
-    color: rgba(84, 84, 84, 1);
-    letter-spacing: 0.025em;
+    .work-guide {
+      display: flex;
+      margin-bottom: 9.9rem;
+    }
   }
 }
