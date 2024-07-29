@@ -16,8 +16,11 @@
 
   <!-- ==== Banner ==== -->
   <div class="home-banner">
-    <div appParallax [style.backgroundImage]="'url(/assets/images/banner.jpg)'"></div>
-    <div class="banner-overlay"></div>
+    <div
+      appParallax
+      [style.backgroundImage]="'url(/assets/images/banner.jpg)'"
+    ></div>
+    <div class="overlay"></div>
     <div class="banner-content">
       <h3>ISN'T IT TIME YOU DID THAT THING?</h3>
       <span class="underline"></span>
@@ -37,176 +40,37 @@
       <img src="/assets/images/arrow-white.svg" alt="image" />
     </div>
   </div>
-  <!-- ==== Banner ==== -->
 
-  <!-- ==== About ==== -->
-  <div class="home-about content-wrapper">
-    <div class="about-welcome">
-      <div class="welcome-img">
-        <img src="/assets/images/1.jpg" alt="image" />
-      </div>
-      <div class="welcome-text">
-        <h3>Welcome to Your Product or Course.</h3>
-        <span class="about-underline"></span>
-        <p>
-          Here is where you are going to paint the picture of what life could
-          look like should this person choose to invest in your ability to in
-          fact change their life. And this picture should be mouthwatering and
-          describe the exact benefits that you yourself have experienced because
-          of this very thing or the very things you teach in this course.
-        </p>
-        <p>
-          And as soon as they have envisioned what is possible, you are going to
-          make sure they know that you were once in their shoes. You're going to
-          break down all of the frustrations in the next section.
-        </p>
-        <span>Ready for your life to change?</span>
-      </div>
-    </div>
-    <div class="about-challenge">
-      <div class="about-challenge-left">
-        <h3>Here you are going to state the challenges and frustrations</h3>
+  <div class="home-banner-mobile">
+    <div
+      class="banner-mobile-image"
+      [style.backgroundImage]="'url(/assets/images/21.jpg)'"
+    ></div>
+  </div>
 
-        <p>THAT ONE MIGHT CURRENTLY BE FACING IN THEIR BUSINESS</p>
-
-        <ul>
-          <li>
-            <span>1.</span>
-            <p>
-              How about an itemized list of specific pain points? You want these
-              to be very telling of where this person might be at emotionally
-              and where you once were.
-            </p>
-          </li>
-
-          <li>
-            <span>2.</span>
-            <p>
-              Another specific pain point here and you want it to be very
-              telling of where this person might be at emotionally and where you
-              once were.
-            </p>
-          </li>
-          <li>
-            <span>3.</span>
-            <p>
-              Maybe you've they've feeling this way, frustrated by this
-              particular situation and overwhelmed?&nbsp;
-            </p>
-          </li>
-          <li>
-            <span>4.</span>
-            <p>
-              Maybe they're wishing they could ____ or ____ without having to
-              ____ or ____. It's just so hard!
-            </p>
-          </li>
-        </ul>
+  <div class="home-content">
+    <div class="banner-mobile-content">
+      <h3>ISn'T IT TIME YOU DID THAT THING?</h3>
+      <span class="underline"></span>
+      <div class="banner-signature">
+        <h4>WE'RE GOING TO GO BIG HERE IN ORDER TO GRAB</h4>
       </div>
-      <div class="about-challenge-right">
-        <img src="/assets/images/2.jpg" alt="image" />
-      </div>
-    </div>
-    <div class="about-des">
-      <img src="/assets/images/3.jpg" alt="image" />
-      <h2>"This program transformed my business!"</h2>
+      <h5>some attention.</h5>
       <p>
-        "Following that one-liner highlight from your client's testimonial you
-        are going to want to add the entire thing hear to really drive home how
-        awesome people think your course or product is."
+        And once you have grabbed their attention we are going to have a little
+        something right here. Just a little something in order to hook 'em and
+        get them scrolling right along to discover something amazing from you.
       </p>
-      <span>— MAYA</span>
+      <app-button>YEs, PLEASE</app-button>
     </div>
-  </div>
 
-  <div class="about-remind">
-    <div class="remind-img">
-      <img src="/assets/images/4.jpg" alt="image" />
-    </div>
-    <div class="remind-text">
-      <h3>BUT GUESS WHAT...</h3>
-      <h4>Remind them you once experienced the same thing.</h4>
-      <p>
-        You are going to tell them all about it right here. But be sure and not
-        drag on too long because, remember, this is about them. You want to
-        share enough so they no longer feel alone, but the focus is going to be
-        on the solution and what they can find for themselves should they invest
-        in your services.
-      </p>
-      <span>And that part is coming quick, but not before we hint at the epiphany
-        that you had. The realization you came to.</span>
-    </div>
-  </div>
+    <!-- ==== Banner ==== -->
 
-  <!-- ==== About ==== -->
-  <div class="feature-intro">
-    <div class="feature-overlay"></div>
-    <div class="feature-banner">
-      <div class="feature-content">
-        <p class="feature-text-head">introducing...</p>
-        <p class="feature-text-choice">Your Course or Product Title</p>
-        <p class="feature-text-desc">
-          Here let's go ahead and display a really great and hard-hitting
-          description of your course. Keep it brief, but dangle a big carrot
-          here, friend. Like, a big brief carrot. You know what I'm saying?
-          Don't worry - we will be sharing all of the details down below!
-        </p>
-      </div>
-      <div class="feature-laptop">
-        <div class="feature-laptop-wrapper"></div>
-        <div class="feature-laptop-background"></div>
-        <div class="feature-learn">
-          <p class="feature-learn-break">Let's break it down</p>
-          <p class="feature-learn-desc">Here's what you'll learn</p>
-        </div>
-        <div class="feature-background">
-          <app-card imageSrc="/assets/images/feature-1.jpg" alt="feature-1" featureTitle="Feature one"
-            description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."></app-card>
-          <app-card imageSrc="/assets/images/feature-2.jpg" alt="feature-2" featureTitle="feature two"
-            description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."
-            [isReverse]="true"></app-card>
-          <app-card imageSrc="/assets/images/feature-3.jpg" alt="feature-3" featureTitle="Feature three"
-            description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."></app-card>
-          <app-card imageSrc="/assets/images/feature-4.png" alt="feature-4" featureTitle="Feature four"
-            description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."
-            [isReverse]="true"></app-card>
-        </div>
-      </div>
-    </div>
+    <!-- ==== About ==== -->
+    <app-about></app-about>
+    <!-- ==== About ==== -->
   </div>
-  <div class="feature-categories"></div>
-  <!-- === Sound === -->
-  <div class="sound-container">
-    <div class="sound-wrapper">
-      <p class="sound-heading">How does this sound?</p>
-      <h2 class="sound-result">THE RESULTS YOU'RE GOING TO GET:</h2>
-      <div class="sound-layout">
-        <app-soundstep numerical="01"
-          content="Replace your 9-5 income and make more in a month than ever before."></app-soundstep>
-        <app-soundstep numerical="02"
-          content="Fill your calendar with your dream clients that make your heart happy."></app-soundstep>
-        <app-soundstep numerical="03"
-          content="Create a tribe of loyal follower who engage with your content regularly."></app-soundstep>
-        <app-soundstep numerical="04"
-          content="Kick that imposter syndrome and self doubt in the booty and feel confident."></app-soundstep>
-        <app-soundstep numerical="05"
-          content="Double your email list with subscribers who actually like hearing from you."></app-soundstep>
-      </div>
-      <app-button class="sound-button">YES, I'M IN!</app-button>
-    </div>
-  </div>
-  <!-- === How it works -->
-  <div class="work-container">
-    <div class="work-wrapper">
-      <p class="work-title">HOW IT WORKS</p>
-      <div class="work-guide">
-        <app-workstep title="FIRST THIS"
-          desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut."></app-workstep>
-        <app-workstep title="THEN THIS"
-          desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut."></app-workstep>
-        <app-workstep title="THEN THIS"
-          desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut."></app-workstep>
-      </div>
-    </div>
-  </div>
+  <!-- ==== FQA ==== -->
+  <app-fqa></app-fqa>
+  <!-- ==== FQA ==== -->
 </div>

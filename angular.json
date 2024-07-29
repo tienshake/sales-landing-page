@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "your-project-name": {
+    "sales": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/your-project-name",
+            "outputPath": "dist/sales",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "your-project-name:build:production"
+              "buildTarget": "sales:build:production"
             },
             "development": {
-              "buildTarget": "your-project-name:build:development"
+              "buildTarget": "sales:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,337 @@
+@import "variables";
+@import "mixins";
+
+.home-fqa {
+  @include flex-center;
+  flex-direction: column;
+  background-color: $text-white;
+  padding-top: 10rem;
+  .home-fqa-title {
+    font-family: $font-cammron;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.home-fqa-content {
+  display: flex;
+  padding-bottom: 10rem;
+  width: 95rem;
+
+  ul {
+    padding: 0 5rem;
+    border-right: 2px solid $border-color;
+  }
+
+  ul:last-child {
+    border: none;
+  }
+
+  li {
+    margin-bottom: 6rem;
+    h4 {
+      font-family: $font-garamond;
+      font-size: 3rem;
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.fqa-quantity {
+  background-color: $primary-color;
+  width: 100%;
+  height: 23rem;
+  @include flex-center;
+
+  ul {
+    width: 120rem;
+    @include flex-center;
+  }
+
+  li {
+    @include flex-center;
+    flex-direction: column;
+    padding: 0 4rem;
+    border-right: 2px solid $text-white;
+
+    span {
+      font-family: $font-cammron;
+      font-size: 4.2rem;
+      color: $text-white;
+    }
+
+    p {
+      width: 15.6rem;
+      text-align: center;
+      color: $text-white;
+    }
+  }
+
+  li:last-child {
+    border: none;
+  }
+}
+
+.fqa-banner {
+  position: relative;
+  width: 100%;
+  height: 65rem;
+  overflow: hidden;
+
+  .fqa-content {
+    width: 47rem;
+    position: absolute;
+    z-index: $z-hight;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $text-white;
+    @include flex-center;
+    flex-direction: column;
+
+    h3 {
+      font-family: $font-blackStones;
+      font-size: 7rem;
+      font-weight: 300;
+      font-style: italic;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    ::ng-deep {
+      button {
+        height: 5.3rem;
+        width: 22.1rem;
+      }
+    }
+  }
+}
+
+.fqa-social {
+  width: 100%;
+  height: 12rem;
+  border-bottom: 2px solid $border-color;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    color: $primary-color;
+    font-family: $font-cammron;
+    font-weight: 400;
+    font-size: $font-size-xlarge;
+    letter-spacing: 0.15em;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    svg {
+      height: 17px;
+      path {
+        fill: $primary-color;
+      }
+    }
+
+    li {
+      @include flex-center;
+      font-family: $font-garamond;
+      letter-spacing: 0.1em;
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-style: italic;
+      color: $primary-color;
+    }
+  }
+}
+
+.fqa-info {
+  width: 100%;
+  height: 23rem;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .fqa-info-link {
+    display: flex;
+    gap: 3rem;
+    letter-spacing: 0.25em;
+
+    li {
+      line-height: 2;
+      font-size: 1.1rem;
+      font-family: $font-questrial;
+      font-weight: 400;
+    }
+  }
+
+  .fqa-info-last {
+    height: 100%;
+    width: 40rem;
+    p {
+      text-align: right;
+      margin-bottom: 2rem;
+    }
+
+    ::ng-deep {
+      button {
+        height: 5.3rem;
+        width: 22.1rem;
+        float: right;
+        background-color: $tertiary-color;
+      }
+    }
+  }
+}
+
+.fqa-images {
+  height: 26rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  img {
+    display: inline-block;
+    height: 100%;
+    width: 26rem;
+    object-fit: cover;
+  }
+}
+
+.fqa-images-mobile {
+  display: none;
+}
+
+// Mobile
+@media (max-width: $breakpoint-tablet) {
+  .home-fqa {
+    padding-top: 5rem;
+
+    .home-fqa-title {
+      font-size: 3.5rem;
+      text-align: center;
+      margin-bottom: 0;
+      padding: 0 10%;
+    }
+  }
+
+  .home-fqa-content {
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    width: auto;
+    ul {
+      padding: 0;
+      border: none;
+    }
+
+    li {
+      border-bottom: 2px solid $border-color;
+      margin-bottom: 0;
+      padding: 3rem 0;
+    }
+
+    ul:last-child {
+      li:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .fqa-quantity {
+    height: auto;
+    padding: 2rem;
+    align-items: unset;
+    ul {
+      flex-direction: column;
+      width: auto;
+      align-items: unset;
+    }
+
+    li {
+      padding: 0 4rem;
+      border-right: none;
+      flex-direction: row;
+      padding: 0;
+      border-bottom: 1px solid $text-white;
+
+      padding: 2rem 0;
+      span {
+        flex: 1;
+      }
+
+      p {
+        flex: 1;
+        text-align: left;
+        width: auto;
+      }
+    }
+  }
+
+  .fqa-banner {
+    .fqa-content {
+      width: 30rem;
+      h3 {
+        text-align: center;
+        font-size: 6rem;
+      }
+    }
+  }
+
+  .fqa-social {
+    width: 100%;
+    height: 12rem;
+    border-bottom: 2px solid $border-color;
+    padding: 5rem;
+    @include flex-center;
+
+    ul {
+      display: none;
+    }
+  }
+
+  .fqa-info {
+    height: auto;
+    flex-direction: column;
+
+    .fqa-info-link {
+      margin-bottom: 2rem;
+      li {
+        font-size: 1.4rem;
+      }
+    }
+
+    .fqa-info-last {
+      p {
+        text-align: center;
+      }
+      width: auto;
+      flex-direction: column;
+      @include flex-center;
+    }
+  }
+
+  .fqa-images {
+    display: none;
+  }
+
+  .fqa-images-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    img {
+      height: 19.5rem;
+      width: 19.5rem;
+      object-fit: cover;
+    }
+  }
+}

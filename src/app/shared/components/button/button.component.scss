@@ -4,6 +4,7 @@
 .custom-button {
   border-radius: 0%;
   padding: 1.4rem;
+  height: 4rem;
   ::ng-deep {
     .mdc-button__label {
       white-space: nowrap;
@@ -43,5 +44,13 @@
     svg {
       fill: $primary-color;
     }
+  }
+}
+
+// Mobile
+@media (max-width: $breakpoint-tablet) {
+  .custom-button {
+    height: 6rem;
+    width: 22.1rem;
   }
 }

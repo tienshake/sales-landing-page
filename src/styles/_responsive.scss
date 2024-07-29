@@ -7,3 +7,10 @@
     font-size: $font-size-tablet;
   }
 }
+
+// Mobile
+@media (max-width: $breakpoint-tablet) {
+  body {
+    font-size: 1.5em;
+  }
+}
