@@ -74,7 +74,8 @@
   overflow: hidden;
 
   .banner-content {
-    width: 56.6rem;
+    width: 100%;
+    max-width: 56.6rem;
     height: 60%;
     position: absolute;
     top: 50%;
@@ -360,11 +361,16 @@
       .feature-background {
         position: relative;
         top: 84.5rem;
-        width: 39.3rem;
+        width: 100%;
+        max-width: 39.3rem;
         height: 47.4rem;
         display: flex;
         flex-direction: column;
         gap: 3.2rem;
+
+        .feature-card {
+          width: 91rem;
+        }
       }
     }
   }
@@ -436,13 +442,16 @@
 
     .sound-button {
       margin-bottom: 9rem;
+
+      ::ng-deep>.custom-button {
+        padding: 2.6rem 2.95rem !important;
+      }
     }
   }
 }
 
 // How it works
 .work-container {
-
   .work-wrapper {
     max-width: 120rem;
     margin: 0 auto;
@@ -450,6 +459,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 
     .work-title {
       font-family: $font-cammron;
@@ -467,6 +477,231 @@
     .work-guide {
       display: flex;
       margin-bottom: 9.9rem;
+    }
+
+    .work-author {
+      margin-right: -26%;
+
+      .work-author-wrapper {
+        width: 62.2rem;
+        height: 61.1rem;
+        background-color: rgba(178, 196, 206, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+        padding: 9rem 10rem 6rem 12rem;
+
+        .work-author-img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 45%;
+          left: 10%;
+          background-image: url("/assets/images/work-1.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+          border-radius: inherit;
+          width: 37.2rem;
+          height: 49.7rem;
+        }
+
+        >h2 {
+          color: $text-white;
+          text-transform: uppercase;
+          line-height: 1.5;
+          letter-spacing: 0.25em;
+          font-size: 1.3rem;
+          font-family: $font-questrial;
+          font-weight: 400;
+          font-style: normal;
+          margin-bottom: 6.5rem;
+        }
+
+        .work-author-word {
+          color: $text-white;
+          line-height: 1.3;
+          letter-spacing: 0.025em;
+          font-size: 3.8rem;
+          text-align: center;
+          font-family: 'Cammron Regular';
+          font-weight: 400;
+          font-style: normal;
+          margin-bottom: 4.5rem;
+        }
+
+        .work-author-name {
+          color: $text-white;
+          line-height: 1;
+          font-size: 6rem;
+          text-align: center;
+          font-family: $font-blackStones;
+          font-weight: 400;
+          font-style: normal;
+          margin-bottom: 4rem;
+        }
+
+        .work-author-btn {
+          position: relative;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .work-start {
+    height: 77.6rem;
+    padding-top: 13.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 120rem;
+    margin: 0 auto;
+    align-items: center;
+
+    >h2 {
+      color: rgba(84, 84, 84, 1);
+      line-height: 1.3;
+      font-size: 3rem;
+      text-align: center;
+      letter-spacing: 0.025em;
+      font-family: $font-cammron;
+      font-weight: 400;
+      font-style: normal;
+      max-width: 70.8rem;
+      height: 10.1rem;
+      margin-bottom: 5.2rem;
+    }
+
+    .work-start-heading {
+      transform: scale(1, 1) translate(0px, 0px) rotate(-2deg);
+      width: 79.5rem;
+      height: 6.3rem;
+      color: rgba(178, 196, 206, 1);
+      line-height: 1;
+      font-size: 60px;
+      text-align: center;
+      font-family: $font-blackStones;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0.025em;
+    }
+
+    .work-start-laptop {
+      width: 939px;
+      height: 913px;
+      transform: scale(1, 1) translate(0px, 0px);
+      position: relative;
+
+      .work-laptop-image {
+        width: 100%;
+        height: 100%;
+        background-image: url("/assets/images/laptop.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+        border-radius: inherit;
+      }
+
+      .work-background-image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: inherit;
+        position: absolute;
+        max-width: 32rem;
+        height: 20rem;
+        width: 100%;
+        top: 10.1rem;
+        left: 28.2rem;
+        background-image: url("/assets/images/background-laptop.png");
+      }
+    }
+
+    .work-start-productive {
+      text-transform: uppercase;
+      line-height: 1.3;
+      letter-spacing: 0.1em;
+      font-size: 40px;
+      text-align: center;
+      font-family: 'Cammron Regular';
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+
+  .work-card-container {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// plan
+.plan-container {
+  margin-top: 5rem;
+  background-color: rgba(178, 196, 206, 1);
+
+  .plan-wrapper {
+    max-width: 120rem;
+    height: 74.7rem;
+    margin: 0 auto;
+    padding: 7.5rem 9.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      color: $text-white;
+      text-transform: uppercase;
+      line-height: 1.8;
+      letter-spacing: 0.25em;
+      font-size: 1.2rem;
+      font-family: $font-poppins;
+      font-weight: 500;
+      font-style: normal;
+      margin-bottom: 4.5rem;
+    }
+
+    .plan-step-wrapper {
+      display: flex;
+      gap: 3.5rem;
+    }
+  }
+}
+
+.moment-container {
+  padding-top: 5rem;
+  background-color: $text-white;
+  
+  .moment-wrapper {
+    height: 75.3rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    background: $text-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .moment-word {
+      display: flex;
+      gap: 12.5rem;
+
+      .monment-word-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .momment-img {
+        background-image: url("/assets/images/wedding-4.jpg");
+      }
     }
   }
 }
