@@ -678,7 +678,7 @@
 }
 
 .moment-container {
-  padding-top: 5rem;
+  padding-top: 8rem;
   background-color: $text-white;
   
   .moment-wrapper {
@@ -692,15 +692,69 @@
 
     .moment-word {
       display: flex;
-      gap: 12.5rem;
+      gap: 11rem;
+      padding: 0px 10.5rem;
 
       .monment-word-wrapper {
         display: flex;
         flex-direction: column;
+        position: relative;
+        margin-top: 3.5rem;
+        
+        .momment-word-intro {
+          max-width: 35.4rem;
+          color: rgba(84, 84, 84, 1);
+          line-height: 1.8;
+          font-size: 2rem;
+          text-align: left;
+          font-family: $font-cammron;
+          font-weight: 400;
+          font-style: normal;
+          margin-bottom: 3rem;
+        }
+
+        .momment-word-desc {
+          max-width: 375px;
+          color: rgba(84, 84, 84, 1);
+          line-height: 1.8;
+          letter-spacing: 0.05em;
+          font-size: 1.3rem;
+          text-align: justify;
+          font-family: $font-libre;
+          font-weight: 400;
+          font-style: normal;
+        }
       }
       
       .momment-img {
-        background-image: url("/assets/images/wedding-4.jpg");
+        position: relative;
+
+        img {
+          max-width: 41.1rem;
+          max-height: 57.1rem;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+          border-radius: inherit;
+          height: 100%;
+        }
+
+        .momment-img-text {
+          position: absolute;
+          top: 4rem;
+          right: -16.1rem;
+          transform: scale(1, 1) translate(0px, 0px) rotate(-5deg);
+          max-width: 27rem;
+          max-height: 10.7rem;
+          color: rgba(178, 196, 206, 1);
+          line-height: 1.5;
+          letter-spacing: 0em;
+          font-size: 6rem;
+          text-align: left;
+          font-family: $font-blackStones;
+          font-weight: 400;
+          font-style: normal;
+        }
       }
     }
   }
