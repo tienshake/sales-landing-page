@@ -46,3 +46,11 @@
     }
   }
 }
+
+// Mobile
+@media (max-width: $breakpoint-tablet) {
+  .custom-button {
+    height: 6rem;
+    width: 22.1rem;
+  }
+}

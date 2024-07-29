@@ -142,3 +142,78 @@
     }
   }
 }
+
+.home-banner-mobile,
+.banner-mobile-content {
+  display: none;
+}
+
+// Mobile
+@media (max-width: $breakpoint-tablet) {
+  .home-heading {
+    display: none;
+  }
+
+  .home-content {
+    padding: 10%;
+  }
+
+  .home-banner {
+    display: none;
+  }
+
+  .home-banner-mobile {
+    position: relative;
+    display: block;
+    height: 25rem;
+  }
+
+  .banner-mobile-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner-mobile-content {
+    display: block;
+    h3 {
+      font-family: $font-poppins;
+      font-size: $font-size-base;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      margin-bottom: 1rem;
+    }
+
+    .underline {
+      background-color: $text-gray;
+    }
+
+    .banner-signature {
+      margin-top: 2rem;
+      position: relative;
+      h4 {
+        font-family: $font-cammron;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 1.3;
+      }
+    }
+
+    h5 {
+      font-family: $font-blackStones;
+      font-size: 5rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: $primary-color;
+      font-style: italic;
+    }
+
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+}

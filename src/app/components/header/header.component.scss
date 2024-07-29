@@ -27,3 +27,44 @@
   position: absolute;
   right: 0;
 }
+
+.header-container-mobile {
+  display: none;
+}
+
+// Mobile
+@media (max-width: $breakpoint-tablet) {
+  .header-container {
+    display: none;
+  }
+
+  .header-container-mobile {
+    display: block;
+    height: 5.6rem;
+    @include flex-center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: $text-white;
+    z-index: $z-very-hight;
+
+    h3 {
+      color: $primary-color;
+      font-family: $font-cammron;
+      font-weight: 400;
+      font-size: 1.8rem;
+      letter-spacing: 0.15em;
+    }
+
+    svg {
+      position: absolute;
+      height: 2rem;
+      right: 2rem;
+      cursor: pointer;
+      path {
+        fill: $text-gray;
+      }
+    }
+  }
+}

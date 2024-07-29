@@ -4,3 +4,9 @@
   padding-top: $header-height;
   background-color: $background-color;
 }
+
+@media (max-width: $breakpoint-tablet) {
+  .home-layout-outlet {
+    padding-top: 5.6rem;
+  }
+}
