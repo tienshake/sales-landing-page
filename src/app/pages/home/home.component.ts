@@ -4,11 +4,8 @@ import { ParallaxDirective } from '../../directives/parallax.directive';
 import { AboutComponent } from './components/about/about.component';
 import { FqaComponent } from './components/fqa/fqa.component';
 import { CardComponent } from '../../components/card/card.component';
-import { SoundstepComponent } from '../../components/soundstep/soundstep.component';
-import { WorkstepComponent } from '../../components/workstep/workstep.component';
-import { CardworkComponent } from '../../components/cardwork/cardwork.component';
-import { PaymentplanComponent } from '../../components/paymentplan/paymentplan.component';
-import { EndingComponent } from './components/ending/ending.component';
+import { FeaturesComponent } from './components/features/features.component';
+import { EndingComponent } from '../../components/ending/ending.component';
 
 @Component({
   selector: 'app-home',
@@ -21,11 +18,8 @@ import { EndingComponent } from './components/ending/ending.component';
     AboutComponent,
     FqaComponent,
     CardComponent,
-    SoundstepComponent,
-    WorkstepComponent,
-    CardworkComponent,
-    PaymentplanComponent,
     EndingComponent,
+    FeaturesComponent,
   ],
 })
 export class HomeComponent implements OnInit {

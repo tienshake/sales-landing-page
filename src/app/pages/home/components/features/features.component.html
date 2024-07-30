@@ -1,0 +1,183 @@
+<div class="feature-intro">
+  <div class="feature-banner">
+    <div appParallax [style.backgroundImage]="'url(/assets/images/background-1.jpg)'"></div>
+    <div class="feature-overlay"></div>
+    <div class="feature-content">
+          <p class="feature-text-head">introducing...</p>
+          <p class="feature-text-choice">Your Course or Product Title</p>
+          <p class="feature-text-desc">
+            Here let's go ahead and display a really great and hard-hitting
+            description of your course. Keep it brief, but dangle a big carrot
+            here, friend. Like, a big brief carrot. You know what I'm saying?
+            Don't worry - we will be sharing all of the details down below!
+          </p>
+        </div>
+        <div class="feature-laptop">
+          <div class="feature-laptop-wrapper"></div>
+          <div class="feature-laptop-background"></div>
+          <div class="feature-learn">
+            <p class="feature-learn-break">Let's break it down</p>
+            <p class="feature-learn-desc">Here's what you'll learn</p>
+          </div>
+          <div class="feature-background">
+            <app-card class="feature-card" imageSrc="/assets/images/feature-1.jpg" alt="feature-1"
+              featureTitle="Feature one"
+              description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization." />
+            <app-card class="feature-card" imageSrc="/assets/images/feature-2.jpg" alt="feature-2"
+              featureTitle="feature two"
+              description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."
+              [isReverse]="true" />
+            <app-card class="feature-card" imageSrc="/assets/images/feature-3.jpg" alt="feature-3"
+              featureTitle="Feature three"
+              description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization." />
+            <app-card class="feature-card" imageSrc="/assets/images/feature-4.png" alt="feature-4"
+              featureTitle="Feature four"
+              description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."
+              [isReverse]="true" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-categories"></div>
+    <!-- === Sound === -->
+    <div class="sound-container">
+      <div class="sound-wrapper">
+        <p class="sound-heading">How does this sound?</p>
+        <h2 class="sound-result">THE RESULTS YOU'RE GOING TO GET:</h2>
+        <div class="sound-layout">
+          <app-soundstep numerical="01"
+            content="Replace your 9-5 income and make more in a month than ever before."></app-soundstep>
+          <app-soundstep numerical="02"
+            content="Fill your calendar with your dream clients that make your heart happy."></app-soundstep>
+          <app-soundstep numerical="03"
+            content="Create a tribe of loyal follower who engage with your content regularly."></app-soundstep>
+          <app-soundstep numerical="04"
+            content="Kick that imposter syndrome and self doubt in the booty and feel confident."></app-soundstep>
+          <app-soundstep numerical="05"
+            content="Double your email list with subscribers who actually like hearing from you."></app-soundstep>
+        </div>
+        <app-button class="sound-button">YES, I'M IN!</app-button>
+      </div>
+    </div>
+    <!-- === How it works -->
+    <div class="work-container">
+      <div class="work-wrapper">
+        <p class="work-title">HOW IT WORKS</p>
+        <div class="work-guide">
+          <app-workstep title="FIRST THIS"
+            desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut."></app-workstep>
+          <app-workstep title="THEN THIS"
+            desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut."></app-workstep>
+          <app-workstep title="THEN THIS"
+            desc="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut."></app-workstep>
+        </div>
+        <div class="work-author">
+          <div class="work-author-wrapper">
+            <div class="work-author-img"></div>
+            <h2>Kind words</h2>
+            <p class="work-author-word">
+              "Kate changed my life. My whole damn life. I simply wouldn't be
+              where I am in my business if not for her."
+            </p>
+            <p class="work-author-name">-Jake</p>
+            <app-button class="work-author-btn">NEXT</app-button>
+          </div>
+        </div>
+      </div>
+      <div class="work-start">
+        <h2>A year from now they will have wished they started today...</h2>
+        <p class="work-start-heading">So let's get them started!</p>
+        <div class="work-start-laptop">
+          <div class="work-laptop-image"></div>
+          <div class="work-background-image"></div>
+        </div>
+        <p class="work-start-productive">Yes, It Really Works</p>
+      </div>
+      <div class="work-card-container">
+        <app-cardwork imageSrc="/assets/images/wedding-1.jpg" name="Janine" subTitle="tripled her income"
+          content="I went from barely paying my bills to quitting my job and traveling the whole world."
+          desc="Poke fixie kickstarter fashion axe mixtape brunch. Small batch bushwick master cleanse waistcoat, everyday carry chillwave la croix. Jianbing next level narwhal, messenger bag master cleanse kale chips." />
+        <app-cardwork imageSrc="/assets/images/wedding-2.jpg" name="Kisha" subTitle="SCALED HER BUSINESS BY 5X"
+          content="If you're on the fence, let me just say... you've gotta work with Katie."
+          desc="Poke fixie kickstarter fashion axe mixtape brunch. Small batch bushwick master cleanse waistcoat, everyday carry chillwave la croix. Jianbing next level narwhal, messenger bag master cleanse kale chips" />
+        <app-cardwork imageSrc="/assets/images/wedding-3.jpg" name="James" subTitle="HIRED A DREAM TEAM"
+          content="Our revenue tripled after doing Katie's mastermind for the year. Mind blown"
+          desc="Poke fixie kickstarter fashion axe mixtape brunch. Small batch bushwick master cleanse waistcoat, everyday carry chillwave la croix. Jianbing next level narwhal, messenger bag master cleanse kale chips." />
+      </div>
+    </div>
+    <!-- SELECT THE PLAN THAT WORKS FOR YOU: -->
+    <div class="plan-container">
+      <div class="plan-wrapper">
+        <h3>select the plan that works for you:</h3>
+        <div class="plan-step-wrapper">
+          <app-paymentplan emotion="Most affordable:" title="Payment Plan" btnName="2 payments of $599" />
+          <app-paymentplan emotion="Most flexible!" title="One Payment" btnName="1 payment of $1050" />
+        </div>
+      </div>
+    </div>
+    <div class="moment-container">
+      <div class="moment-wrapper">
+        <div class="moment-word">
+          <div class="monment-word-wrapper">
+            <p class="momment-word-intro">
+              You're stronger than you think you are. But if you're anything
+              like me, you need help to take your super power to the next level.
+              You just want someone to tell you what works.
+            </p>
+            <p class="momment-word-desc">
+              I'm baby farm-to-table sartorial helvetica, migas marfa paleo
+              chambray normcore 8-bit bushwick roof party truffaut banjo
+              actually. YOLO health goth jean shorts forage farm-to-table
+              flannel. Brooklyn hexagon biodiesel af, man bun literally salvia
+              live-edge fixie cornhole freegan. Snackwave hella meggings bespoke
+              meditation art party stumptown edison bulb williamsburg literally
+              four dollar toast distillery photo booth.
+            </p>
+          </div>
+          <div class="momment-img">
+            <img src="/assets/images/wedding-4.jpg" alt="wedding">
+            <p class="momment-img-text">You're in the right place.</p>
+          </div>
+          <p class="momment-word-desc-mobile">
+            I'm baby farm-to-table sartorial helvetica, migas marfa paleo
+            chambray normcore 8-bit bushwick roof party truffaut banjo
+            actually. YOLO health goth jean shorts forage farm-to-table
+            flannel. Brooklyn hexagon biodiesel af, man bun literally salvia
+            live-edge fixie cornhole freegan. Snackwave hella meggings bespoke
+            meditation art party stumptown edison bulb williamsburg literally
+            four dollar toast distillery photo booth.
+          </p>
+          <p class="momment-img-text-mobile">You're in the right place.</p>
+        </div>
+      </div>
+    </div>
+    <!-- === Bonus === -->
+    <div class="bonus-container">
+      <div class="bonus-wrapper">
+        <div class="bonus-card">
+          <div class="bonus-frame">
+            <div class="bonus-img"></div>
+            <div class="bonus-module">
+              <p class="bonus-free">Free guide</p>
+              <h2>Bonus Course Module</h2>
+            </div>
+          </div>
+          <div class="bonus-content">
+            <p class="bonus-title">
+              Bonus!
+            </p>
+            <h2 class="bonus-subcontent">
+              Grab your seat today and get my really cool thing!
+            </h2>
+            <p class="bonus-desc">
+              Tell them a bonus offer that they will get should they sign up during your pre-sale window or if they
+              choose a premiere package. Get them excited to join you and dangle some carrots, my friend. Dangle those
+              dog-gone carrots.
+            </p>
+            <app-button class="bonus-btn">LET'S DO THIS!</app-button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==== Ending === -->
+    <app-ending />
