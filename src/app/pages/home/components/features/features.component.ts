@@ -8,6 +8,7 @@ import { CardComponent } from '../../../../components/card/card.component';
 import { EndingComponent } from '../../../../components/ending/ending.component';
 import { ParallaxDirective } from '../../../../directives/parallax.directive';
 import { ParallaxCenterDirective } from '../../../../directives/parallax-center.directive';
+import { LazyLoadDirective } from '../../../../directives/lazy-load.directive';
 
 @Component({
   selector: 'app-features',
@@ -21,7 +22,8 @@ import { ParallaxCenterDirective } from '../../../../directives/parallax-center.
     CardworkComponent,
     PaymentplanComponent,
     EndingComponent,
-    ParallaxCenterDirective
+    ParallaxCenterDirective,
+    LazyLoadDirective,
   ],
   templateUrl: './features.component.html',
   styleUrl: './features.component.scss',
