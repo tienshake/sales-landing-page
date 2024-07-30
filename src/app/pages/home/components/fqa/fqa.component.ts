@@ -12,6 +12,6 @@ import { AboutComponent } from "../about/about.component";
 })
 export class FqaComponent implements OnInit {
   constructor() {}
-
+  
   ngOnInit() {}
 }

@@ -8,13 +8,25 @@ import { SoundstepComponent } from '../../components/soundstep/soundstep.compone
 import { WorkstepComponent } from '../../components/workstep/workstep.component';
 import { CardworkComponent } from '../../components/cardwork/cardwork.component';
 import { PaymentplanComponent } from '../../components/paymentplan/paymentplan.component';
+import { EndingComponent } from './components/ending/ending.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   standalone: true,
-  imports: [ButtonComponent, ParallaxDirective, AboutComponent, FqaComponent, CardComponent, SoundstepComponent, WorkstepComponent, CardworkComponent, PaymentplanComponent],
+  imports: [
+    ButtonComponent,
+    ParallaxDirective,
+    AboutComponent,
+    FqaComponent,
+    CardComponent,
+    SoundstepComponent,
+    WorkstepComponent,
+    CardworkComponent,
+    PaymentplanComponent,
+    EndingComponent,
+  ],
 })
 export class HomeComponent implements OnInit {
   ngOnInit(): void {}

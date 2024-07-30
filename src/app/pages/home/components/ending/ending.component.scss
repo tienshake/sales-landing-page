@@ -1,0 +1,195 @@
+@import "variables";
+@import "mixins";
+
+.ending-container {
+  .ending-banner {
+    position: relative;
+    width: 100%;
+    height: 65rem;
+    overflow: hidden;
+  }
+
+  .ending-wrapper {
+    width: 47rem;
+    position: absolute;
+    z-index: $z-hight;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $text-white;
+    width: 100%;
+    width: 76.5rem;
+    height: 17.8rem;
+
+    .ending-heading {
+      width: 100%;
+      transform: rotate(-3deg);
+      color: $text-white;
+      line-height: 1.3;
+      letter-spacing: 0em;
+      font-size: 8.5rem;
+      text-align: center;
+      font-family: $font-blackStones;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      line-height: 1.5;
+      letter-spacing: 0.25em;
+      font-size: 1.3rem;
+      font-family: $font-questrial;
+      font-weight: 400;
+      font-style: normal;
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+    }
+  }
+}
+
+.ending-step {
+  height: 100%;
+
+  .ending-step-wrapper {
+    background-color: rgba(178, 196, 206, 1);
+    padding: 2rem 9rem;
+    height: 100%;
+    pointer-events: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12rem;
+    align-items: center;
+
+    h2 {
+      color: $text-white;
+      line-height: 1.5;
+      letter-spacing: 0.025em;
+      font-size: 4.2rem;
+      font-family: $font-cammron;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 7rem;
+    }
+  }
+
+  .ending-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .ending-btn {
+    margin-top: 8rem;
+    cursor: pointer;
+    padding-bottom: 3rem;
+    ::ng-deep > .custom-button {
+      background: $text-white;
+      padding: 3.5rem 5rem;
+
+      .mdc-button__label {
+        color: #545454;
+        letter-spacing: 0.25em;
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: $font-poppins;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      svg {
+        fill: rgba(178, 196, 206, 1);
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .ending-container {
+    .ending-banner {
+      position: relative;
+      width: 100%;
+      height: 65rem;
+      overflow: hidden;
+    }
+
+    .ending-wrapper {
+      width: 31.5rem;
+
+      .ending-heading {
+        width: 100%;
+        transform: rotate(-3deg);
+        color: $text-white;
+        line-height: 1.3;
+        letter-spacing: 0em;
+        font-size: 4rem;
+        text-align: center;
+        font-family: $font-blackStones;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 3rem;
+      }
+
+      h2 {
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 0.25em;
+        font-size: 1.3rem;
+        font-family: $font-questrial;
+        font-weight: 400;
+        font-style: normal;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+      }
+    }
+  }
+
+  .ending-step {
+    height: 100%;
+
+    .ending-step-wrapper {
+      background-color: rgba(178, 196, 206, 1);
+      height: 100%;
+      pointer-events: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 12rem;
+      align-items: center;
+
+      h2 {
+        text-align: center;
+      }
+    }
+
+    .ending-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+    .ending-btn {
+      margin: 8rem 0rem;
+      cursor: pointer;
+
+      ::ng-deep > .custom-button {
+        background: $text-white;
+        padding: 3.5rem 5rem;
+
+        .mdc-button__label {
+          color: #545454;
+          letter-spacing: 0.25em;
+          font-size: 1.2rem;
+          text-align: center;
+          font-family: $font-poppins;
+          font-weight: 500;
+          font-style: normal;
+        }
+
+        svg {
+          fill: rgba(178, 196, 206, 1);
+        }
+      }
+    }
+  }
+}

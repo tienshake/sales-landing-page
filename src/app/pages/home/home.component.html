@@ -66,6 +66,7 @@
     <div class="feature-intro">
       <div class="feature-overlay"></div>
       <div class="feature-banner">
+        <div appParallax [style.backgroundImage]="'url(/assets/images/background-1.jpg)'"></div>
         <div class="feature-content">
           <p class="feature-text-head">introducing...</p>
           <p class="feature-text-choice">Your Course or Product Title</p>
@@ -86,18 +87,18 @@
           <div class="feature-background">
             <app-card class="feature-card" imageSrc="/assets/images/feature-1.jpg" alt="feature-1"
               featureTitle="Feature one"
-              description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."></app-card>
+              description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization." />
             <app-card class="feature-card" imageSrc="/assets/images/feature-2.jpg" alt="feature-2"
               featureTitle="feature two"
               description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."
-              [isReverse]="true"></app-card>
+              [isReverse]="true" />
             <app-card class="feature-card" imageSrc="/assets/images/feature-3.jpg" alt="feature-3"
               featureTitle="Feature three"
-              description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."></app-card>
-            <app-card class="feature-card" imageSrc="/assets/images/feature-4.png" alt="feature-4"
+              description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization." />
+            <!-- <app-card class="feature-card" imageSrc="/assets/images/feature-4.png" alt="feature-4"
               featureTitle="Feature four"
               description="Explain what this course feature is and sharing what it will do for the student. Remember, this is about them first and foremost. You want to help them visualize how their current problem will be solved. Use the description of this specific feature to help create that visualization."
-              [isReverse]="true"></app-card>
+              [isReverse]="true" /> -->
           </div>
         </div>
       </div>
@@ -202,31 +203,49 @@
             <img src="/assets/images/wedding-4.jpg" alt="wedding">
             <p class="momment-img-text">You're in the right place.</p>
           </div>
+          <p class="momment-word-desc-mobile">
+            I'm baby farm-to-table sartorial helvetica, migas marfa paleo
+            chambray normcore 8-bit bushwick roof party truffaut banjo
+            actually. YOLO health goth jean shorts forage farm-to-table
+            flannel. Brooklyn hexagon biodiesel af, man bun literally salvia
+            live-edge fixie cornhole freegan. Snackwave hella meggings bespoke
+            meditation art party stumptown edison bulb williamsburg literally
+            four dollar toast distillery photo booth.
+          </p>
+          <p class="momment-img-text-mobile">You're in the right place.</p>
         </div>
       </div>
     </div>
     <!-- === Bonus === -->
-     <div class="bonus-container">
-        <div class="bonus-wrapper">
-          <div class="bonus-card">
-            <div class="bonus-img">
-              <div class="bonus-img-frame"></div>
-            </div>
-            <div class="bonus-content">
-              <p class="bonus-title">
-                Bonus!
-              </p>
-              <h2 class="bonus-subcontent">
-                Grab your seat today and get my really cool thing!
-              </h2>
-              <p class="bonus-desc">
-                Tell them a bonus offer that they will get should they sign up during your pre-sale window or if they choose a premiere package. Get them excited to join you and dangle some carrots, my friend. Dangle those dog-gone carrots.
-              </p>
-              <app-button class="bonus-btn">LET'S DO THIS!</app-button>
+    <div class="bonus-container">
+      <div class="bonus-wrapper">
+        <div class="bonus-card">
+          <div class="bonus-frame">
+            <div class="bonus-img"></div>
+            <div class="bonus-module">
+              <p class="bonus-free">Free guide</p>
+              <h2>Bonus Course Module</h2>
             </div>
           </div>
+          <div class="bonus-content">
+            <p class="bonus-title">
+              Bonus!
+            </p>
+            <h2 class="bonus-subcontent">
+              Grab your seat today and get my really cool thing!
+            </h2>
+            <p class="bonus-desc">
+              Tell them a bonus offer that they will get should they sign up during your pre-sale window or if they
+              choose a premiere package. Get them excited to join you and dangle some carrots, my friend. Dangle those
+              dog-gone carrots.
+            </p>
+            <app-button class="bonus-btn">LET'S DO THIS!</app-button>
+          </div>
         </div>
-     </div>
+      </div>
+    </div>
+    <!-- ==== Ending === -->
+    <app-ending />
   </div>
 
   <!-- FQA -->
