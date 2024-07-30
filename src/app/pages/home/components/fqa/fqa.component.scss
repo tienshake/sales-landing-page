@@ -219,13 +219,13 @@
       font-size: 3.5rem;
       text-align: center;
       margin-bottom: 0;
-      padding: 0 10%;
+      padding: 0 $padding-mobile;
     }
   }
 
   .home-fqa-content {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: $padding-mobile;
+    padding-right: $padding-mobile;
     flex-direction: column;
     width: auto;
     ul {

@@ -15,6 +15,7 @@ export class ButtonComponent implements OnInit {
 
   @Input() color: 'primary' | 'secondary' | 'white' = 'primary';
   @Input() type: 'button' | 'submit' | 'reset' = 'button';
+  @Input() size: 'small' | 'large' = 'small';
   @Output() onClick = new EventEmitter<MouseEvent>();
 
   constructor() {}

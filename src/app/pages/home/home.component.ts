@@ -6,6 +6,7 @@ import { FqaComponent } from './components/fqa/fqa.component';
 import { CardComponent } from '../../components/card/card.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { EndingComponent } from '../../components/ending/ending.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +21,7 @@ import { EndingComponent } from '../../components/ending/ending.component';
     CardComponent,
     EndingComponent,
     FeaturesComponent,
+    ReviewsComponent
   ],
 })
 export class HomeComponent implements OnInit {

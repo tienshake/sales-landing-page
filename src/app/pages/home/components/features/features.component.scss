@@ -1,168 +1,106 @@
 @import "variables";
 @import "mixins";
 
-// Feature
-.feature-intro {
-  .feature-overlay {
+// Banner
+
+.feature-container {
+  overflow: hidden;
+}
+
+.feature-banner {
+  height: 71.5rem;
+  width: 100%;
+  position: relative;
+
+  .feature-content {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.15);
-    z-index: $z-low;
-  }
+    z-index: $z-hight;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: $text-white;
+    @include flex-center;
+    flex-direction: column;
 
-  .feature-banner {
-    position: relative;
-    height: 71.3rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: top;
-
-    .feature-banner-mountain {
-      display: none;
+    h3 {
+      font-family: $font-blackStones;
+      font-size: 7rem;
+      font-weight: 300;
+      font-style: italic;
     }
 
-    .feature-content {
-      max-width: 93.9rem;
-      height: 60%;
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      z-index: $z-hight;
-
-      .feature-text-head {
-        transform: scale(1, 1) translate(0rem, 0rem) rotate(-2deg);
-        color: $text-white;
-        line-height: 1;
-        letter-spacing: 0em;
-        font-size: 7rem;
-        text-align: center;
-        width: 54.1rem;
-        height: 6.5rem;
-        font-family: $font-blackStones;
-        font-weight: 400;
-        font-style: italic;
-        margin-bottom: 3.6rem;
-      }
-
-      .feature-text-choice {
-        color: $text-white;
-        font-size: 5rem;
-        text-align: center;
-        font-family: $font-garamond;
-        font-weight: 400;
-        font-style: italic;
-        margin-bottom: 3.6rem;
-      }
-
-      .feature-text-desc {
-        color: $text-white;
-        max-width: 50.8rem;
-        text-align: center;
-        line-height: 1.8;
-        letter-spacing: 0.05em;
-        font-size: 1, 3rem;
-        font-family: "Libre Baskerville";
-        font-weight: 400;
-        font-style: normal;
-      }
+    h4 {
+      font-family: $font-garamond;
+      line-height: 1;
+      letter-spacing: 0.025em;
+      font-size: 6rem;
+      text-align: center;
+      font-weight: 400;
+      margin-bottom: 2rem;
     }
 
-    .feature-laptop {
-      position: absolute;
-      max-width: 93.9rem;
-      width: 100%;
-      height: 91.3rem;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -25%);
-
-      .feature-laptop-wrapper {
-        object-fit: cover;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50%;
-        border-radius: inherit;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 3%;
-        background-image: url("/assets/images/laptop.png");
-      }
-
-      .feature-laptop-background {
-        background-repeat: no-repeat;
-        background-size: cover;
-        transform-origin: 50% 50%;
-        position: absolute;
-        left: 25%;
-        top: 35%;
-        width: 44.8rem;
-        height: 28rem;
-        background-image: url("/assets/images/background-laptop.png");
-      }
-
-      .feature-learn {
-        position: absolute;
-        left: 22%;
-        top: 76%;
-
-        .feature-learn-break {
-          position: relative;
-          font-family: $font-questrial;
-          font-weight: 400;
-          margin-bottom: 3.6rem;
-          text-align: center;
-          font-style: normal;
-          color: $text-white;
-          font-size: 1.3rem;
-          text-transform: uppercase;
-        }
-
-        .feature-learn-desc {
-          color: $text-white;
-          font-size: 3rem;
-          text-align: center;
-          font-family: $font-cammron;
-          font-weight: 400;
-          font-style: italic;
-          text-transform: uppercase;
-          line-height: 1.3;
-          letter-spacing: 0.1em;
-        }
-      }
-
-      .feature-background {
-        position: relative;
-        top: 84.5rem;
-        width: 100%;
-        max-width: 39.3rem;
-        height: 47.4rem;
-        display: flex;
-        flex-direction: column;
-        gap: 3.2rem;
-
-        .feature-card {
-          width: 91rem;
-        }
-      }
+    p {
+      text-align: center;
+      margin-bottom: 4rem;
+      width: 50.8rem;
     }
   }
 }
 
-.feature-categories {
-  height: 188rem;
-  pointer-events: none;
-  width: 100%;
-  background-color: rgba(178, 196, 206, 1);
+.feature-learn {
+  @include flex-center;
+  flex-direction: column;
+  background-color: $primary-color;
+  padding-bottom: 10rem;
+  .feature-laptop-wrapper {
+    max-width: 93.9rem;
+    max-height: 91.3rem;
+    margin-top: -40rem;
+    margin-right: -6%;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    img:last-child {
+      position: absolute;
+      width: 48%;
+      height: 50%;
+      left: 22%;
+      top: 25%;
+    }
+  }
+
+  .feature-learn-break {
+    font-family: $font-questrial;
+    font-weight: 400;
+    text-align: center;
+    color: $text-white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  .feature-learn-desc {
+    color: $text-white;
+    font-size: 3rem;
+    text-align: center;
+    font-family: $font-cammron;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1.3;
+    letter-spacing: 0.1em;
+  }
+
+  .feature-background {
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 // Sound
@@ -335,6 +273,7 @@
   }
 
   .work-start {
+    overflow: hidden;
     height: 77.6rem;
     padding-top: 13.5rem;
     position: relative;
@@ -374,35 +313,24 @@
     }
 
     .work-start-laptop {
-      width: 93.9rem;
-      height: 91.3rem;
-      transform: scale(1, 1) translate(0rem, 0rem);
+      max-width: 93.9rem;
+      max-height: 91.3rem;
+      margin-top: -5%;
+      margin-right: -6%;
       position: relative;
-
-      .work-laptop-image {
-        width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      img {
         height: 100%;
-        background-image: url("/assets/images/laptop.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50%;
-        border-radius: inherit;
-        position: absolute;
+        width: 100%;
       }
 
-      .work-background-image {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
-        border-radius: inherit;
+      img:last-child {
         position: absolute;
-        max-width: 30.9rem;
-        max-width: 31.9rem;
-        height: 19.9rem;
-        width: 100%;
+        width: 48%;
+        height: 50%;
+        left: 22%;
         top: 25%;
-        left: 30%;
-        background-image: url("/assets/images/background-laptop.png");
       }
     }
 
@@ -717,34 +645,44 @@
 // Mobile
 @media (max-width: $breakpoint-tablet) {
   // Feature
-  .feature-categories {
-    height: 440rem;
-    pointer-events: none;
-    width: 100%;
-    background-color: rgba(178, 196, 206, 1);
+
+  .feature-banner {
+    height: 64rem;
+    .feature-content {
+      p {
+        width: 35rem;
+      }
+    }
   }
 
-  .feature-laptop-background {
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform-origin: 50% 50%;
-    position: absolute;
-    left: 25%;
-    top: 35%;
-    width: 44.8rem;
-    height: 28rem;
-    background-image: url("/assets/images/background-laptop.png");
+  .feature-learn {
+    .feature-laptop-wrapper {
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 100%;
+      margin-top: -25%;
+    }
+  }
+
+  .sound-container {
+    .sound-wrapper {
+      .sound-result {
+        width: 100%;
+      }
+    }
+  }
+  .work-container {
+    .work-start {
+      .work-start-laptop {
+        max-width: 100%;
+      }
+    }
   }
 
   .plan-container {
     .plan-wrapper {
-      max-width: 120rem;
-      height: 100%;
-      margin: 0 auto;
-      padding: 7.5rem 9.8rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      height: auto;
+      padding: 10rem $padding-mobile;
       .plan-step-wrapper {
         display: flex;
         flex-direction: column;
@@ -758,17 +696,15 @@
     background: #f7f4f1;
 
     .sound-wrapper {
-      max-width: 120rem;
-      margin: 0 auto;
-      padding-top: 11.4rem;
-      align-items: center;
-      display: flex;
+      padding-top: 5rem;
       flex-direction: column;
       margin-bottom: 7.2rem;
 
       .sound-heading {
-        width: 52rem;
-        height: 9rem;
+        width: 100%;
+        margin-bottom: 0;
+        transform: none;
+        font-size: 5rem;
       }
 
       .sound-layout {
@@ -787,7 +723,8 @@
 
   // moment
   .moment-container {
-    padding-top: 3rem;
+    padding: 3rem $padding-mobile;
+
     .moment-wrapper {
       height: 100%;
 
@@ -795,7 +732,7 @@
         display: flex;
         flex-direction: column;
         gap: 0rem;
-        padding: 0rem 10.5rem;
+        padding: 0;
 
         .monment-word-wrapper {
           display: flex;
@@ -825,7 +762,7 @@
           position: relative;
           margin-bottom: 5rem;
           img {
-            max-width: 41.1rem;
+            max-width: 100%;
             max-height: 57.1rem;
             background-repeat: no-repeat;
             background-size: cover;
@@ -859,161 +796,7 @@
 
   // bonus
   .bonus-container {
-    height: 120rem;
-
-    .bonus-wrapper {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      position: relative;
-
-      .bonus-card {
-        background-color: rgba(178, 196, 206, 1);
-
-        .bonus-frame {
-          position: absolute;
-          left: 3%;
-          top: 6.4rem;
-          width: 100%;
-          height: 100%;
-          width: 59.7rem;
-          height: 60.7rem;
-          transform: scale(1, 1) translate(0rem, 0rem) rotate(-10deg);
-          background-image: url("/assets/images/frame.png");
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: 50% 50%;
-          border-radius: inherit;
-
-          .bonus-img {
-            position: absolute;
-            left: 13.8rem;
-            top: 9rem;
-            width: 100%;
-            height: 100%;
-            max-width: 31rem;
-            height: 41rem;
-            transform: scale(1, 1) translate(0rem, 0rem) rotate(0deg);
-            background-image: url("/assets/images/wedding-5.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 50%;
-            border-radius: inherit;
-          }
-
-          .bonus-module {
-            transform: rotate(-1deg);
-            max-width: 21.3rem;
-            height: 12.3rem;
-            position: absolute;
-            left: 32%;
-            top: 51%;
-            background-color: $text-white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .bonus-free {
-              color: rgba(84, 84, 84, 1);
-              font-size: 1rem;
-              line-height: 1.8;
-              letter-spacing: 0.25em;
-              font-family: $font-garamond;
-              text-transform: uppercase;
-              font-weight: 500;
-              font-style: normal;
-              margin-bottom: 1rem;
-              transform: rotate(-1deg);
-            }
-
-            h2 {
-              line-height: 1.2;
-              font-size: 2.5rem;
-              color: rgba(84, 84, 84, 1);
-              letter-spacing: 0.025em;
-              font-family: $font-garamond;
-              font-weight: 400;
-              font-style: normal;
-              text-align: center;
-            }
-          }
-        }
-
-        .bonus-content {
-          left: 13%;
-          position: absolute;
-          top: 67rem;
-
-          .bonus-title {
-            transform: scale(1, 1) translate(0rem, 0rem) rotate(-8deg);
-            width: 24.8rem;
-            height: 5.6rem;
-            color: $text-white;
-            line-height: 1;
-            font-size: 7.5rem;
-            text-align: left;
-            font-family: $font-blackStones;
-            font-weight: 400;
-            letter-spacing: 0.025em;
-            font-style: normal;
-            margin-bottom: 4rem;
-          }
-
-          .bonus-subcontent {
-            max-width: 54rem;
-            max-height: 10.5rem;
-            color: $text-white;
-            line-height: 1.3;
-            text-align: left;
-            letter-spacing: 0.025em;
-            font-size: 3.2rem;
-            font-family: $font-garamond;
-            font-weight: 400;
-            font-style: normal;
-            text-transform: none;
-            margin-bottom: 3rem;
-          }
-
-          .bonus-desc {
-            line-height: 1.8;
-            letter-spacing: 0.05em;
-            font-size: 1.3rem;
-            text-align: justify;
-            font-family: $font-libre;
-            font-weight: 400;
-            font-style: normal;
-            color: $text-white;
-            width: 48rem;
-            height: 10.6rem;
-            margin-bottom: 4rem;
-          }
-
-          .bonus-btn {
-            // how to remove hover opacity + background ?
-            ::ng-deep > .custom-button {
-              background-color: $text-white;
-
-              .mdc-button__label {
-                color: #545454;
-              }
-
-              .mdc-button__label:hover {
-                opacity: 0.7;
-
-                svg {
-                  opacity: 1;
-                }
-              }
-
-              svg {
-                fill: #545454;
-              }
-            }
-          }
-        }
-      }
-    }
+    display: none;
   }
 
   // How it works
@@ -1028,16 +811,8 @@
       position: relative;
 
       .work-title {
-        font-family: $font-cammron;
-        font-weight: 400;
-        font-style: normal;
-        color: rgba(84, 84, 84, 1);
-        line-height: 1.5;
-        text-transform: uppercase;
-        letter-spacing: 0.15em;
-        font-size: 3.8rem;
-        text-align: center;
-        margin-bottom: 6rem;
+        padding: 0 $padding-mobile;
+        font-size: 3rem;
       }
 
       .work-guide {
@@ -1048,20 +823,15 @@
         margin-right: 0;
 
         .work-author-wrapper {
-          margin-top: 66%;
+          margin-top: 100%;
           width: 100%;
-          height: 61.1rem;
-          background-color: rgba(178, 196, 206, 1);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          z-index: 1;
-          padding: 9rem 10rem 6rem 12rem;
+          height: auto;
+          padding: 8rem $padding-mobile;
 
           .work-author-img {
-            top: 45%;
-            left: 20%;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -55%);
           }
 
           > h2 {
@@ -1134,8 +904,8 @@
       }
 
       .work-start-heading {
-        transform: scale(1, 1) translate(0rem, 0rem) rotate(-2deg);
-        width: 79.5rem;
+        transform: unset;
+        width: 100%;
         height: 6.3rem;
         color: rgba(178, 196, 206, 1);
         line-height: 1;

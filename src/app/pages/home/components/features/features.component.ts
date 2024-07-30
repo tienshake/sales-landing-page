@@ -7,6 +7,7 @@ import { ButtonComponent } from '../../../../shared/components/button/button.com
 import { CardComponent } from '../../../../components/card/card.component';
 import { EndingComponent } from '../../../../components/ending/ending.component';
 import { ParallaxDirective } from '../../../../directives/parallax.directive';
+import { ParallaxCenterDirective } from '../../../../directives/parallax-center.directive';
 
 @Component({
   selector: 'app-features',
@@ -20,6 +21,7 @@ import { ParallaxDirective } from '../../../../directives/parallax.directive';
     CardworkComponent,
     PaymentplanComponent,
     EndingComponent,
+    ParallaxCenterDirective
   ],
   templateUrl: './features.component.html',
   styleUrl: './features.component.scss',

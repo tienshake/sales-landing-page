@@ -4,7 +4,15 @@
 .custom-button {
   border-radius: 0%;
   padding: 1.4rem;
-  height: 4rem;
+
+  &.large {
+    height: 5.5rem;
+  }
+
+  &.small {
+    height: 4rem;
+  }
+
   ::ng-deep {
     .mdc-button__label {
       white-space: nowrap;
