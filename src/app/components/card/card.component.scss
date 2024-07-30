@@ -35,7 +35,7 @@
       line-height: 1.5;
       letter-spacing: 0.025em;
       font-size: 3.3rem;
-      font-family: $font-cammron;
+      font-family: $font-garamond;
       font-weight: 400;
       font-style: normal;
     }
@@ -97,7 +97,7 @@
       line-height: 1.5;
       letter-spacing: 0.025em;
       font-size: 3.2rem;
-      font-family: $font-cammron;
+      font-family: $font-garamond;
       font-weight: 400;
       font-style: normal;
     }
@@ -129,6 +129,7 @@
     align-items: start;
     flex-direction: column;
     gap: 10rem;
+
     > img {
       width: 100%;
       max-width: 64.4rem;
@@ -144,16 +145,6 @@
       gap: 2.8rem;
       margin: 0 auto;
 
-      > h3 {
-        text-transform: uppercase;
-        line-height: 1.5;
-        letter-spacing: 0.25em;
-        font-size: 1.3rem;
-        font-family: $font-questrial;
-        font-weight: 400;
-        font-style: normal;
-      }
-
       > h2 {
         line-height: 1.5;
         letter-spacing: 0.025em;
@@ -161,24 +152,6 @@
         font-family: $font-cammron;
         font-weight: 400;
         font-style: normal;
-      }
-
-      > p {
-        max-width: 39.8rem;
-        word-break: break-word;
-        line-height: 1.8;
-        letter-spacing: 0.05em;
-        font-size: 1.3rem;
-        text-align: justify;
-        font-family: $font-libre;
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      .card-underline {
-        background-color: $text-white;
-        height: 0.1rem;
-        width: 3rem;
       }
     }
   }
@@ -207,16 +180,6 @@
       gap: 2.8rem;
       margin: 0 auto;
 
-      > h3 {
-        text-transform: uppercase;
-        line-height: 1.5;
-        letter-spacing: 0.25em;
-        font-size: 1.3rem;
-        font-family: $font-questrial;
-        font-weight: 400;
-        font-style: normal;
-      }
-
       > h2 {
         line-height: 1.5;
         letter-spacing: 0.025em;
@@ -224,24 +187,6 @@
         font-family: $font-cammron;
         font-weight: 400;
         font-style: normal;
-      }
-
-      > p {
-        max-width: 39.8rem;
-        word-break: break-word;
-        line-height: 1.8;
-        letter-spacing: 0.05em;
-        font-size: 1.3rem;
-        text-align: justify;
-        font-family: $font-libre;
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      .card-underline {
-        background-color: $text-white;
-        height: 0.1rem;
-        width: 3rem;
       }
     }
   }

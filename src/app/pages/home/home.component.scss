@@ -202,9 +202,9 @@
 
       .feature-text-choice {
         color: $text-white;
-        font-size: 3rem;
+        font-size: 5rem;
         text-align: center;
-        font-family: $font-cammron;
+        font-family: $font-garamond;
         font-weight: 400;
         font-style: italic;
         margin-bottom: 3.6rem;
@@ -306,7 +306,7 @@
 }
 
 .feature-categories {
-  height: 243.8rem;
+  height: 188rem;
   pointer-events: none;
   width: 100%;
   background-color: rgba(178, 196, 206, 1);
@@ -512,7 +512,7 @@
       height: 6.3rem;
       color: rgba(178, 196, 206, 1);
       line-height: 1;
-      font-size: 60rem;
+      font-size: 6rem;
       text-align: center;
       font-family: $font-blackStones;
       font-weight: 400;
@@ -556,7 +556,7 @@
       text-transform: uppercase;
       line-height: 1.3;
       letter-spacing: 0.1em;
-      font-size: 40rem;
+      font-size: 4rem;
       text-align: center;
       font-family: "Cammron Regular";
       font-weight: 400;
