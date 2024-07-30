@@ -1,0 +1,749 @@
+@import "variables";
+@import "mixins";
+
+// Reviews-des
+.reviews-des {
+  @include flex-center;
+  flex-direction: column;
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+  background-color: $text-white;
+  img {
+    border-radius: 50%;
+    height: 12.8rem;
+    width: 12.8rem;
+    margin-bottom: 4rem;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-family: $font-blackStones;
+    font-size: 7rem;
+    font-style: italic;
+    color: $primary-color;
+    font-weight: 300;
+    width: 50rem;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+  }
+
+  p {
+    width: 52.8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  span {
+    font-family: $font-questrial;
+    line-height: 1.5;
+    letter-spacing: 0.25em;
+  }
+}
+
+// Reviews-hey
+.reviews-hey {
+  display: flex;
+  justify-content: center;
+  gap: 9rem;
+  background-color: $primary-color;
+  padding-bottom: 10rem;
+  color: $text-white;
+  .hey-img {
+    width: 49rem;
+    height: 67rem;
+    margin-top: -5rem;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    span {
+      position: absolute;
+      right: -20%;
+      top: 20%;
+      font-family: $font-blackStones;
+      font-size: 7.5rem;
+      font-style: italic;
+    }
+  }
+
+  .hey-text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 10rem;
+    width: 40rem;
+
+    h3 {
+      font-family: $font-questrial;
+      line-height: 1.5;
+      letter-spacing: 0.25em;
+      font-weight: 400;
+      margin-bottom: 4rem;
+    }
+
+    h4 {
+      font-family: $font-garamond;
+      font-size: 4.5rem;
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 4rem;
+    }
+
+    p {
+      padding-bottom: 3rem;
+      font-size: 1.4rem;
+    }
+
+    span {
+      font-family: $font-questrial;
+      line-height: 1.7;
+      letter-spacing: 0.25em;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// reviews-goal
+.reviews-goal {
+  @include flex-center;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+
+  .reviews-goal-left {
+    min-width: 39.3rem;
+    height: 51.9rem;
+    margin-right: -3rem;
+    z-index: $z-hight;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    span {
+      position: absolute;
+      right: -20%;
+      top: -20%;
+      font-family: $font-blackStones;
+      font-size: 6rem;
+      font-style: italic;
+      color: $primary-color;
+      width: 30rem;
+      transform: scale(1, 1) translate(0px, 0px) rotate(-14deg);
+      line-height: 1.2;
+    }
+  }
+
+  .reviews-goal-right {
+    padding: 8rem 9.1rem;
+    width: 61.3rem;
+    height: 72.8rem;
+    background-color: #f1f5f6;
+    @include flex-center;
+    flex-direction: column;
+
+    .goal-right-title {
+      @include flex-center;
+      flex-direction: column;
+      gap: 3rem;
+      margin-bottom: 3rem;
+
+      h3 {
+        font-family: $font-garamond;
+        font-size: 5rem;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        line-height: 1;
+        text-align: center;
+      }
+
+      .underline {
+        background-color: $text-color;
+      }
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    span {
+      display: block;
+      width: 34rem;
+      text-align: center;
+      font-family: $font-poppins;
+      line-height: 1.7;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// about-course
+.reviews-course {
+  padding: 0 5rem;
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 10rem;
+  .course-img {
+    max-width: 46.8rem;
+    max-height: 54.8rem;
+    flex: 1;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .course-text {
+    flex: 1;
+    h3 {
+      font-family: $font-garamond;
+      font-size: 5rem;
+      font-weight: 300;
+      line-height: 1.3;
+      margin-bottom: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    & > div {
+      @include flex-center;
+      justify-content: flex-start;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      svg {
+        height: 3.3rem;
+        min-width: 3.3rem;
+        path {
+          fill: $primary-color;
+        }
+      }
+
+      span {
+        text-transform: uppercase;
+        font-family: $font-questrial;
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 0.25em;
+      }
+    }
+
+    & > div + p {
+      font-weight: 700;
+    }
+  }
+
+  .about-underline {
+    @include underline($primary-color);
+    margin-bottom: 2rem;
+  }
+}
+
+.reviews-course-last {
+  .course-img {
+    max-width: 36.9rem;
+    max-height: 41.3rem;
+  }
+}
+
+// review-options
+
+.review-options {
+  background-color: $secondary-color;
+  @include flex-center;
+  height: 23rem;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+  }
+
+  li {
+    @include flex-center;
+    flex-direction: column;
+    max-width: 25rem;
+    gap: 2rem;
+    svg {
+      height: 4.4rem;
+      path {
+        fill: $text-white;
+      }
+    }
+
+    span {
+      text-align: center;
+      font-family: $font-questrial;
+      line-height: 1.5;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+    }
+  }
+
+  li:first-child {
+    max-width: 17rem;
+  }
+}
+
+// banner
+
+.reviews-banner {
+  position: relative;
+  width: 100%;
+  height: 65rem;
+  overflow: hidden;
+
+  .reviews-content {
+    width: 69rem;
+    position: absolute;
+    z-index: $z-hight;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $text-white;
+    @include flex-center;
+    flex-direction: column;
+
+    h3 {
+      font-family: $font-cammron;
+      font-size: 5rem;
+      font-weight: 300;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    ::ng-deep {
+      button {
+        height: 5.3rem;
+        width: 22.1rem;
+      }
+    }
+  }
+}
+
+.reviews-course-finally {
+  padding: 10rem 0;
+  gap: 9rem;
+  .course-img {
+    max-width: unset;
+    max-height: unset;
+  }
+
+  ::ng-deep {
+    app-button {
+      margin-top: 1rem;
+    }
+  }
+}
+
+//reviews-try
+
+.reviews-try {
+  height: 66.4rem;
+  background-color: $primary-color;
+
+  @include flex-center;
+  flex-direction: column;
+
+  .reviews-try-content {
+    width: 74rem;
+    @include flex-center;
+    flex-direction: column;
+  }
+
+  .reviews-try-icon {
+    position: relative;
+    svg {
+      height: 17rem;
+      path {
+        fill: $text-white;
+      }
+    }
+  }
+
+  .try-icon-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    span:first-child {
+      font-family: $font-cammron;
+      color: $primary-color;
+      font-size: 4rem;
+      line-height: 1;
+    }
+
+    span:last-child {
+      font-family: $font-questrial;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  h3 {
+    font-family: $font-garamond;
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: $text-white;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+//reviews-for-you
+
+.reviews-for-you {
+  @include flex-center;
+  background-color: $text-white;
+  flex-direction: column;
+  padding: 10rem 2rem;
+
+  .content-wrapper {
+    @include flex-center;
+    gap: 6rem;
+  }
+
+  .for-you-text {
+    h3 {
+      font-family: $font-garamond;
+      font-size: 4.2rem;
+      font-weight: 300;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+      height: 7rem;
+
+      span {
+        font-family: $font-blackStones;
+        color: $primary-color;
+        font-size: 5rem;
+        line-height: 1;
+        font-style: italic;
+      }
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    & > div {
+      border-bottom: 1px solid $text-color;
+      @include flex-center;
+      justify-content: flex-start;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      padding: 2rem 0;
+      svg {
+        height: 3.3rem;
+        min-width: 3.3rem;
+        path {
+          fill: $primary-color;
+        }
+      }
+
+      span {
+        text-transform: uppercase;
+        font-family: $font-questrial;
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 0.25em;
+      }
+    }
+
+    & > div + p {
+      font-weight: 700;
+    }
+  }
+}
+
+//reviews-laptop
+
+.reviews-laptop {
+  @include flex-center;
+  flex-direction: column;
+  padding-top: 10rem;
+
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: $font-poppins;
+    font-weight: 500;
+  }
+
+  h4 {
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+    font-size: 4.2rem;
+    text-align: center;
+    font-family: $font-garamond;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .underline {
+    background-color: $text-color;
+  }
+
+  .reviews-laptop-img {
+    max-width: 93.9rem;
+    max-height: 91.3rem;
+    margin-right: -6%;
+    margin-top: -5%;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    img:last-child {
+      position: absolute;
+      width: 48%;
+      height: 50%;
+      left: 22%;
+      top: 25%;
+    }
+  }
+}
+
+//reviews-plans
+
+.reviews-plans {
+  background-color: $primary-color;
+  height: 78.9rem;
+  @include flex-center;
+  flex-direction: column;
+  .reviews-plans-content {
+    display: flex;
+    gap: 4rem;
+  }
+
+  h3 {
+    color: $text-white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: $font-poppins;
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+}
+
+.reviews-hey {
+  .hey-text {
+    span {
+      display: none;
+    }
+  }
+}
+
+// Mobile
+@media (max-width: $breakpoint-tablet) {
+  // reviews-des
+  .reviews-des {
+    padding: 0 $padding-mobile;
+    padding-bottom: 10rem;
+    img {
+      height: 17rem;
+      width: 17rem;
+    }
+
+    h2 {
+      font-size: 6rem;
+      width: auto;
+    }
+
+    p {
+      width: auto;
+      text-align: center;
+    }
+  }
+
+  //reviews-hey
+  .reviews-hey {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    .hey-img {
+      width: 28.8rem;
+      height: 38.5rem;
+      span {
+        display: none;
+      }
+    }
+
+    .hey-text {
+      width: auto;
+      padding: 0 $padding-mobile;
+      span {
+        display: block;
+        font-family: $font-blackStones;
+        font-size: 3rem;
+        font-style: italic;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  // reviews-goal
+  .reviews-goal {
+    position: relative;
+    margin-top: 25rem;
+    padding-left: $padding-mobile;
+    .reviews-goal-left {
+      position: absolute;
+      top: -15%;
+      right: 0;
+      z-index: $z-hight;
+      min-width: 21.5rem;
+      height: 28.3rem;
+      margin-right: 0;
+
+      span {
+        left: -100%;
+      }
+    }
+
+    .reviews-goal-right {
+      padding: 5rem;
+      padding-top: 20rem;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  // reviews-course
+
+  .reviews-course-first {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    padding: 0;
+    .course-img {
+      max-width: 31.6rem;
+      height: 40rem;
+    }
+    .course-text {
+      padding: 0 $padding-mobile;
+    }
+  }
+
+  .reviews-course-last {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0;
+    .course-img {
+      max-width: 31.6rem;
+      height: 40rem;
+    }
+    .course-text {
+      padding: 0 $padding-mobile;
+    }
+  }
+  // review-options
+  .review-options {
+    height: auto;
+    padding: 5rem $padding-mobile;
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    li {
+      justify-content: flex-start;
+      max-width: unset;
+    }
+
+    li:first-child {
+      max-width: unset;
+    }
+  }
+
+  .reviews-banner {
+    .reviews-content {
+      width: 100%;
+      padding: 0 $padding-mobile;
+      h3 {
+        font-size: 4.2rem;
+      }
+    }
+  }
+
+  .reviews-course-finally {
+    flex-direction: column;
+    padding: 0 $padding-mobile;
+    gap: 4rem;
+    padding-top: 4rem;
+    .course-text {
+      h3 {
+        font-size: 4rem;
+      }
+      .course-finally-button {
+        @include flex-center;
+      }
+    }
+  }
+
+  //reviews-try
+
+  .reviews-try {
+    height: auto;
+    padding: 10rem 0;
+    .reviews-try-content {
+      padding: 0 $padding-mobile;
+      width: 100%;
+    }
+  }
+
+  //reviews-for-you
+  .reviews-for-you {
+    .content-wrapper {
+      gap: 2rem;
+      padding: 0 $padding-mobile;
+      flex-direction: column;
+      .for-you-text div {
+        padding: 1rem 0;
+        border: none;
+      }
+    }
+  }
+
+  //reviews-laptop
+  .reviews-laptop {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  //reviews-plans
+  .reviews-plans {
+    height: auto;
+    padding: 5rem;
+    .reviews-plans-content {
+      flex-direction: column;
+    }
+  }
+}

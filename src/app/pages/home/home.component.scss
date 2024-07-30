@@ -14,7 +14,7 @@
   justify-content: space-between;
   height: 8.9rem;
   background-color: $text-white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0rem 1px 4px;
   padding: 0 3.6rem;
 
   h3 {
@@ -56,6 +56,7 @@
   .home-heading-date {
     margin-top: -15px;
     text-align: left;
+
     span {
       margin-left: 1rem;
     }
@@ -73,7 +74,8 @@
   overflow: hidden;
 
   .banner-content {
-    width: 56.6rem;
+    width: 100%;
+    max-width: 56.6rem;
     height: 60%;
     position: absolute;
     top: 50%;
@@ -93,6 +95,7 @@
     .banner-signature {
       margin-top: 2rem;
       position: relative;
+
       h4 {
         font-family: $font-cammron;
         font-size: $font-size-xxlarge;
@@ -132,7 +135,7 @@
     right: 0;
     bottom: 20%;
     z-index: $z-hight;
-    transform: scale(1, 1) translate(40.5px, 0px) rotate(90deg);
+    transform: scale(1, 1) translate(40.5px, 0rem) rotate(90deg);
     display: flex;
     align-items: center;
     color: $text-white;
@@ -155,7 +158,7 @@
   }
 
   .home-content {
-    padding: 10%;
+    padding: $padding-mobile;
   }
 
   .home-banner {
@@ -180,6 +183,7 @@
 
   .banner-mobile-content {
     display: block;
+
     h3 {
       font-family: $font-poppins;
       font-size: $font-size-base;
@@ -195,6 +199,7 @@
     .banner-signature {
       margin-top: 2rem;
       position: relative;
+
       h4 {
         font-family: $font-cammron;
         font-size: 3.5rem;
