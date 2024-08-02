@@ -16,7 +16,10 @@
 
   <!-- ==== Banner ==== -->
   <div class="home-banner">
-    <div appParallax [style.backgroundImage]="'url(/assets/images/banner.jpg)'"></div>
+    <div
+      appParallax
+      [style.backgroundImage]="'url(/assets/images/banner.jpg)'"
+    ></div>
     <div class="overlay"></div>
     <div class="banner-content">
       <h3>ISN'T IT TIME YOU DID THAT THING?</h3>
@@ -39,7 +42,10 @@
   </div>
 
   <div class="home-banner-mobile">
-    <div class="banner-mobile-image" [style.backgroundImage]="'url(/assets/images/21.jpg)'"></div>
+    <div
+      class="banner-mobile-image"
+      [style.backgroundImage]="'url(/assets/images/21.jpg)'"
+    ></div>
   </div>
 
   <div class="home-content">
@@ -65,7 +71,7 @@
   </div>
 
   <!--  ====  Feature ====  -->
-  <app-features/>
+  <app-features />
   <!--  ====  Feature  ====  -->
 
   <!--  ====  Review  ====  -->
@@ -75,5 +81,5 @@
   <!--  ====  FQA  ==== -->
   <app-fqa></app-fqa>
 
-    <!--  ====  FQA  ====  -->
+  <!--  ====  FQA  ====  -->
 </div>
